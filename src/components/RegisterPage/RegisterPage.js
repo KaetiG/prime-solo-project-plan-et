@@ -60,6 +60,7 @@ class RegisterPage extends Component {
   } // end registerUser
 
   handleInputChangeFor = propertyName => (event) => {
+    console.log(event.target.value)
     this.setState({
       [propertyName]: event.target.value,
     });
@@ -102,190 +103,190 @@ class RegisterPage extends Component {
           </div>
           {/* INSERT DROP DOWNS HERE */}
           <div class="form-group">
-            <label for="selectSun">Sun</label>
-            <select class="form-control" id="selectSun">
-              <option value={this.state.sun}>Aries</option>
-              <option value={this.state.sun}>Taurus</option>
-              <option value={this.state.sun}>Gemini</option>
-              <option value={this.state.sun}>Cancer</option>
-              <option value={this.state.sun}>Leo</option>
-              <option value={this.state.sun}>Virgo</option>
-              <option value={this.state.sun}>Libra</option>
-              <option value={this.state.sun}>Scorpio</option>
-              <option value={this.state.sun}>Sagittarius</option>
-              <option value={this.state.sun}>Capricorn</option>
-              <option value={this.state.sun}>Aquarius</option>
-              <option value={this.state.sun}>Pisces</option>
+            <label htmlFor="selectSun">Sun</label>
+            <select class="form-control" name="sun" onChange={this.handleInputChangeFor('sun')} value={this.state.sun}>
+              <option value='1'>Aries</option>
+              <option value='2'>Taurus</option>
+              <option value='3'>Gemini</option>
+              <option value='4'>Cancer</option>
+              <option value='5'>Leo</option>
+              <option value='6'>Virgo</option>
+              <option value='7'>Libra</option>
+              <option value='8'>Scorpio</option>
+              <option value='9'>Sagittarius</option>
+              <option value='10'>Capricorn</option>
+              <option value='11'>Aquarius</option>
+              <option value='12'>Pisces</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="selectMoon">Moon</label>
-            <select class="form-control" id="selectMoon">
-              <option value={this.state.moon}>Aries</option>
-              <option value={this.state.moon}>Taurus</option>
-              <option value={this.state.moon}>Gemini</option>
-              <option value={this.state.moon}>Cancer</option>
-              <option value={this.state.moon}>Leo</option>
-              <option value={this.state.moon}>Virgo</option>
-              <option value={this.state.moon}>Libra</option>
-              <option value={this.state.moon}>Scorpio</option>
-              <option value={this.state.moon}>Sagittarius</option>
-              <option value={this.state.moon}>Capricorn</option>
-              <option value={this.state.moon}>Aquarius</option>
-              <option value={this.state.moon}>Pisces</option>
+            <label htmlFor="selectMoon">Moon</label>
+            <select class="form-control" name="moon" onChange={this.handleInputChangeFor('moon')} value={this.state.moon}>
+              <option value='1'>Aries</option>
+              <option value='2'>Taurus</option>
+              <option value='3'>Gemini</option>
+              <option value='4'>Cancer</option>
+              <option value='5'>Leo</option>
+              <option value='6'>Virgo</option>
+              <option value='7'>Libra</option>
+              <option value='8'>Scorpio</option>
+              <option value='9'>Sagittarius</option>
+              <option value='10'>Capricorn</option>
+              <option value='11'>Aquarius</option>
+              <option value='12'>Pisces</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="selectAscendent">Ascendent</label>
-            <select class="form-control" id="selectAscendent">
-              <option value={this.state.ascendent}>Aries</option>
-              <option value={this.state.ascendent}>Taurus</option>
-              <option value={this.state.ascendent}>Gemini</option>
-              <option value={this.state.ascendent}>Cancer</option>
-              <option value={this.state.ascendent}>Leo</option>
-              <option value={this.state.ascendent}>Virgo</option>
-              <option value={this.state.ascendent}>Libra</option>
-              <option value={this.state.ascendent}>Scorpio</option>
-              <option value={this.state.ascendent}>Sagittarius</option>
-              <option value={this.state.ascendent}>Capricorn</option>
-              <option value={this.state.ascendent}>Aquarius</option>
-              <option value={this.state.ascendent}>Pisces</option>
+            <label htmlFor="selectAscendent">Ascendent</label>
+            <select class="form-control" name="ascendent" onChange={this.handleInputChangeFor('ascendent')} value={this.state.ascendent}>
+              <option value='1'>Aries</option>
+              <option value='2'>Taurus</option>
+              <option value='3'>Gemini</option>
+              <option value='4'>Cancer</option>
+              <option value='5'>Leo</option>
+              <option value='6'>Virgo</option>
+              <option value='7'>Libra</option>
+              <option value='8'>Scorpio</option>
+              <option value='9'>Sagittarius</option>
+              <option value='10'>Capricorn</option>
+              <option value='11'>Aquarius</option>
+              <option value='12'>Pisces</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="selectMercury">Mercury</label>
-            <select class="form-control" id="selectMercury">
-              <option value={this.state.mercury}>Aries</option>
-              <option value={this.state.mercury}>Taurus</option>
-              <option value={this.state.mercury}>Gemini</option>
-              <option value={this.state.mercury}>Cancer</option>
-              <option value={this.state.mercury}>Leo</option>
-              <option value={this.state.mercury}>Virgo</option>
-              <option value={this.state.mercury}>Libra</option>
-              <option value={this.state.mercury}>Scorpio</option>
-              <option value={this.state.mercury}>Sagittarius</option>
-              <option value={this.state.mercury}>Capricorn</option>
-              <option value={this.state.mercury}>Aquarius</option>
-              <option value={this.state.mercury}>Pisces</option>
+            <label htmlFor="selectMercury">Mercury</label>
+            <select class="form-control" name="mercury" onChange={this.handleInputChangeFor('mercury')} value={this.state.mercury}>
+              <option value='1'>Aries</option>
+              <option value='2'>Taurus</option>
+              <option value='3'>Gemini</option>
+              <option value='4'>Cancer</option>
+              <option value='5'>Leo</option>
+              <option value='6'>Virgo</option>
+              <option value='7'>Libra</option>
+              <option value='8'>Scorpio</option>
+              <option value='9'>Sagittarius</option>
+              <option value='10'>Capricorn</option>
+              <option value='11'>Aquarius</option>
+              <option value='12'>Pisces</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="selectVenus">Venus</label>
-            <select class="form-control" id="selectVenus">
-              <option value={this.state.venus}>Aries</option>
-              <option value={this.state.venus}>Taurus</option>
-              <option value={this.state.venus}>Gemini</option>
-              <option value={this.state.venus}>Cancer</option>
-              <option value={this.state.venus}>Leo</option>
-              <option value={this.state.venus}>Virgo</option>
-              <option value={this.state.venus}>Libra</option>
-              <option value={this.state.venus}>Scorpio</option>
-              <option value={this.state.venus}>Sagittarius</option>
-              <option value={this.state.venus}>Capricorn</option>
-              <option value={this.state.venus}>Aquarius</option>
-              <option value={this.state.venus}>Pisces</option>
+            <label htmlFor="selectVenus">Venus</label>
+            <select class="form-control" name="venus" onChange={this.handleInputChangeFor('venus')} value={this.state.venus}>
+              <option value='1'>Aries</option>
+              <option value='2'>Taurus</option>
+              <option value='3'>Gemini</option>
+              <option value='4'>Cancer</option>
+              <option value='5'>Leo</option>
+              <option value='6'>Virgo</option>
+              <option value='7'>Libra</option>
+              <option value='8'>Scorpio</option>
+              <option value='9'>Sagittarius</option>
+              <option value='10'>Capricorn</option>
+              <option value='11'>Aquarius</option>
+              <option value='12'>Pisces</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="selectMars">Mars</label>
-            <select class="form-control" id="selectMars">
-              <option value={this.state.mars}>Aries</option>
-              <option value={this.state.mars}>Taurus</option>
-              <option value={this.state.mars}>Gemini</option>
-              <option value={this.state.mars}>Cancer</option>
-              <option value={this.state.mars}>Leo</option>
-              <option value={this.state.mars}>Virgo</option>
-              <option value={this.state.mars}>Libra</option>
-              <option value={this.state.mars}>Scorpio</option>
-              <option value={this.state.mars}>Sagittarius</option>
-              <option value={this.state.mars}>Capricorn</option>
-              <option value={this.state.mars}>Aquarius</option>
-              <option value={this.state.mars}>Pisces</option>
+            <label htmlFor="selectMars">Mars</label>
+            <select class="form-control" name="mars" onChange={this.handleInputChangeFor('mars')} value={this.state.mars}>
+              <option value='1'>Aries</option>
+              <option value='2'>Taurus</option>
+              <option value='3'>Gemini</option>
+              <option value='4'>Cancer</option>
+              <option value='5'>Leo</option>
+              <option value='6'>Virgo</option>
+              <option value='7'>Libra</option>
+              <option value='8'>Scorpio</option>
+              <option value='9'>Sagittarius</option>
+              <option value='10'>Capricorn</option>
+              <option value='11'>Aquarius</option>
+              <option value='12'>Pisces</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="selectJupiter">Jupiter</label>
-            <select class="form-control" id="selectJupiter">
-              <option value={this.state.jupiter}>Aries</option>
-              <option value={this.state.jupiter}>Taurus</option>
-              <option value={this.state.jupiter}>Gemini</option>
-              <option value={this.state.jupiter}>Cancer</option>
-              <option value={this.state.jupiter}>Leo</option>
-              <option value={this.state.jupiter}>Virgo</option>
-              <option value={this.state.jupiter}>Libra</option>
-              <option value={this.state.jupiter}>Scorpio</option>
-              <option value={this.state.jupiter}>Sagittarius</option>
-              <option value={this.state.jupiter}>Capricorn</option>
-              <option value={this.state.jupiter}>Aquarius</option>
-              <option value={this.state.jupiter}>Pisces</option>
+            <label htmlFor="selectJupiter">Jupiter</label>
+            <select class="form-control" name="jupiter" onChange={this.handleInputChangeFor('jupiter')} value={this.state.jupiter}>
+              <option value='1'>Aries</option>
+              <option value='2'>Taurus</option>
+              <option value='3'>Gemini</option>
+              <option value='4'>Cancer</option>
+              <option value='5'>Leo</option>
+              <option value='6'>Virgo</option>
+              <option value='7'>Libra</option>
+              <option value='8'>Scorpio</option>
+              <option value='9'>Sagittarius</option>
+              <option value='10'>Capricorn</option>
+              <option value='11'>Aquarius</option>
+              <option value='12'>Pisces</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="selectSaturn">Saturn</label>
-            <select class="form-control" id="selectSaturn">
-              <option value={this.state.saturn}>Aries</option>
-              <option value={this.state.saturn}>Taurus</option>
-              <option value={this.state.saturn}>Gemini</option>
-              <option value={this.state.saturn}>Cancer</option>
-              <option value={this.state.saturn}>Leo</option>
-              <option value={this.state.saturn}>Virgo</option>
-              <option value={this.state.saturn}>Libra</option>
-              <option value={this.state.saturn}>Scorpio</option>
-              <option value={this.state.saturn}>Sagittarius</option>
-              <option value={this.state.saturn}>Capricorn</option>
-              <option value={this.state.saturn}>Aquarius</option>
-              <option value={this.state.saturn}>Pisces</option>
+            <label htmlFor="selectSaturn">Saturn</label>
+            <select class="form-control" name="saturn" onChange={this.handleInputChangeFor('saturn')} value={this.state.saturn}>
+              <option value='1'>Aries</option>
+              <option value='2'>Taurus</option>
+              <option value='3'>Gemini</option>
+              <option value='4'>Cancer</option>
+              <option value='5'>Leo</option>
+              <option value='6'>Virgo</option>
+              <option value='7'>Libra</option>
+              <option value='8'>Scorpio</option>
+              <option value='9'>Sagittarius</option>
+              <option value='10'>Capricorn</option>
+              <option value='11'>Aquarius</option>
+              <option value='12'>Pisces</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="selectNeptune">Neptune</label>
-            <select class="form-control" id="selectNeptune">
-              <option value={this.state.neptune}>Aries</option>
-              <option value={this.state.neptune}>Taurus</option>
-              <option value={this.state.neptune}>Gemini</option>
-              <option value={this.state.neptune}>Cancer</option>
-              <option value={this.state.neptune}>Leo</option>
-              <option value={this.state.neptune}>Virgo</option>
-              <option value={this.state.neptune}>Libra</option>
-              <option value={this.state.neptune}>Scorpio</option>
-              <option value={this.state.neptune}>Sagittarius</option>
-              <option value={this.state.neptune}>Capricorn</option>
-              <option value={this.state.neptune}>Aquarius</option>
-              <option value={this.state.neptune}>Pisces</option>
+            <label htmlFor="selectNeptune">Neptune</label>
+            <select class="form-control" name="neptune" onChange={this.handleInputChangeFor('neptune')} value={this.state.neptune}>
+              <option value='1'>Aries</option>
+              <option value='2'>Taurus</option>
+              <option value='3'>Gemini</option>
+              <option value='4'>Cancer</option>
+              <option value='5'>Leo</option>
+              <option value='6'>Virgo</option>
+              <option value='7'>Libra</option>
+              <option value='8'>Scorpio</option>
+              <option value='9'>Sagittarius</option>
+              <option value='10'>Capricorn</option>
+              <option value='11'>Aquarius</option>
+              <option value='12'>Pisces</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="selectUranus">Uranus</label>
-            <select class="form-control" id="selectUranus">
-              <option value={this.state.uranus}>Aries</option>
-              <option value={this.state.uranus}>Taurus</option>
-              <option value={this.state.uranus}>Gemini</option>
-              <option value={this.state.uranus}>Cancer</option>
-              <option value={this.state.uranus}>Leo</option>
-              <option value={this.state.uranus}>Virgo</option>
-              <option value={this.state.uranus}>Libra</option>
-              <option value={this.state.uranus}>Scorpio</option>
-              <option value={this.state.uranus}>Sagittarius</option>
-              <option value={this.state.uranus}>Capricorn</option>
-              <option value={this.state.uranus}>Aquarius</option>
-              <option value={this.state.uranus}>Pisces</option>
+            <label htmlFor="selectUranus">Uranus</label>
+            <select class="form-control" name="uranus" onChange={this.handleInputChangeFor('uranus')} value={this.state.uranus}>
+              <option value='1'>Aries</option>
+              <option value='2'>Taurus</option>
+              <option value='3'>Gemini</option>
+              <option value='4'>Cancer</option>
+              <option value='5'>Leo</option>
+              <option value='6'>Virgo</option>
+              <option value='7'>Libra</option>
+              <option value='8'>Scorpio</option>
+              <option value='9'>Sagittarius</option>
+              <option value='10'>Capricorn</option>
+              <option value='11'>Aquarius</option>
+              <option value='12'>Pisces</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="selectPluto">Pluto</label>
-            <select class="form-control" id="selectPluto">
-              <option value={this.state.pluto}>Aries</option>
-              <option value={this.state.pluto}>Taurus</option>
-              <option value={this.state.pluto}>Gemini</option>
-              <option value={this.state.pluto}>Cancer</option>
-              <option value={this.state.pluto}>Leo</option>
-              <option value={this.state.pluto}>Virgo</option>
-              <option value={this.state.pluto}>Libra</option>
-              <option value={this.state.pluto}>Scorpio</option>
-              <option value={this.state.pluto}>Sagittarius</option>
-              <option value={this.state.pluto}>Capricorn</option>
-              <option value={this.state.pluto}>Aquarius</option>
-              <option value={this.state.pluto}>Pisces</option>
+            <label htmlFor="selectPluto">Pluto</label>
+            <select class="form-control" name="pluto" onChange={this.handleInputChangeFor('pluto')} value={this.state.pluto}>
+              <option value='1'>Aries</option>
+              <option value='2'>Taurus</option>
+              <option value='3'>Gemini</option>
+              <option value='4'>Cancer</option>
+              <option value='5'>Leo</option>
+              <option value='6'>Virgo</option>
+              <option value='7'>Libra</option>
+              <option value='8'>Scorpio</option>
+              <option value='9'>Sagittarius</option>
+              <option value='10'>Capricorn</option>
+              <option value='11'>Aquarius</option>
+              <option value='12'>Pisces</option>
             </select>
           </div>
           <div>

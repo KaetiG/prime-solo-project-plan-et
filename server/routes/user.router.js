@@ -30,7 +30,7 @@ router.post('/register', (req, res, next) => {
   const uranus = req.body.uranus;
   const pluto = req.body.pluto;
 
-  const queryText = `INSERT INTO "user" (username, password, sun, moon, ascendent, mercury, venus, mars, jupiter, saturn, neptune, uranus, pluto) 
+  const queryText = `INSERT INTO "user" ("username", "password", "sun", "moon", "ascendent", "mercury", "venus", "mars", "jupiter", "saturn", "neptune", "uranus", "pluto") 
   VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) 
   RETURNING id`;
   pool.query(queryText, [username, password, sun, moon, ascendent, mercury, venus, mars, jupiter, saturn, neptune, uranus, pluto])

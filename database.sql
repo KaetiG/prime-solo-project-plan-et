@@ -7,17 +7,17 @@ CREATE TABLE "user" (
     "id" SERIAL PRIMARY KEY,
     "username" VARCHAR (80) UNIQUE NOT NULL,
     "password" VARCHAR (1000) NOT NULL,
-    "sun" VARCHAR (15) NOT NULL,
-    "moon" VARCHAR (15) NOT NULL,
-    "ascendent" VARCHAR (15) NOT NULL,
-    "mercury" VARCHAR (15) NOT NULL,
-    "venus" VARCHAR (15) NOT NULL,
-    "mars" VARCHAR (15) NOT NULL,
-    "jupiter" VARCHAR (15) NOT NULL,
-    "saturn" VARCHAR (15) NOT NULL,
-    "neptune" VARCHAR (15) NOT NULL,
-    "uranus" VARCHAR (15) NOT NULL,
-    "pluto" VARCHAR (15) NOT NULL
+    "sun" INT NOT NULL,
+    "moon" INT NOT NULL,
+    "ascendent" INT NOT NULL,
+    "mercury" INT NOT NULL,
+    "venus" INT NOT NULL,
+    "mars" INT NOT NULL,
+    "jupiter" INT NOT NULL,
+    "saturn" INT NOT NULL,
+    "neptune" INT NOT NULL,
+    "uranus" INT NOT NULL,
+    "pluto" INT NOT NULL
 );
 
 CREATE TABLE "posts" (
@@ -489,3 +489,21 @@ VALUES ('Aquarius', 'Pluto in Aquarius need to do things in their own individual
 INSERT INTO "pluto" ("sign", "description")
 VALUES ('Pisces', 'This placement may tend to constantly worry whether or not their decisions effect others negatively. They can be inspiring people, and may feel misunderstood sometimes.');
 
+CREATE TABLE "profile" (
+"id" SERIAL PRIMARY KEY,
+"user_id" INT REFERENCES "user" NOT NULL,
+"sun_id" INT REFERENCES "sun" NOT NULL,
+"moon_id" INT REFERENCES "moon" NOT NULL,
+"ascendent_id" INT REFERENCES "ascendent" NOT NULL,
+"mercury_id" INT REFERENCES "mercury" NOT NULL,
+"venus_id" INT REFERENCES "venus" NOT NULL,
+"mars_id" INT REFERENCES "mars" NOT NULL,
+"jupiter_id" INT REFERENCES "jupiter" NOT NULL,
+"saturn_id" INT REFERENCES "saturn" NOT NULL,
+"neptune_id" INT REFERENCES "neptune" NOT NULL,
+"uranus_id" INT REFERENCES "uranus" NOT NULL,
+"pluto_id" INT REFERENCES "pluto" NOT NULL
+);
+
+INSERT INTO "profile" ("user_id", "sun_id", "moon_id", "ascendent_id", "mercury_id", "venus_id", "mars_id", "jupiter_id", "saturn_id", "neptune_id", "uranus_id", "pluto_id")
+VALUES (1, 10, 6, 10, 9, 8, 9, 6, 11, 10, 10, 8);

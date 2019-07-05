@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+
 class RegisterPage extends Component {
   state = {
     username: '',
@@ -21,19 +22,19 @@ class RegisterPage extends Component {
 
   registerUser = (event) => {
     event.preventDefault();
-//if this errors later, it may have to be one line :(//
-    if (this.state.username 
-      && this.state.password 
-      && this.state.sun 
-      && this.state.moon 
-      && this.state.ascendent 
-      && this.state.mercury 
-      && this.state.venus 
-      && this.state.mars 
-      && this.state.jupiter 
-      && this.state.saturn 
-      && this.state.neptune 
-      && this.state.uranus 
+    //if this errors later, it may have to be one line :(//
+    if (this.state.username
+      && this.state.password
+      && this.state.sun
+      && this.state.moon
+      && this.state.ascendent
+      && this.state.mercury
+      && this.state.venus
+      && this.state.mars
+      && this.state.jupiter
+      && this.state.saturn
+      && this.state.neptune
+      && this.state.uranus
       && this.state.pluto) {
       this.props.dispatch({
         type: 'REGISTER',
@@ -98,6 +99,24 @@ class RegisterPage extends Component {
                 onChange={this.handleInputChangeFor('password')}
               />
             </label>
+          </div>
+          {/* INSERT DROP DOWNS HERE */}
+          <div class="form-group">
+            <label for="selectSun">Sun</label>
+            <select class="form-control" id="selectSun">
+              <option>Aries</option>
+              <option>Taurus</option>
+              <option>Gemini</option>
+              <option>Cancer</option>
+              <option>Leo</option>
+              <option>Virgo</option>
+              <option>Libra</option>
+              <option>Scorpio</option>
+              <option>Sagittarius</option>
+              <option>Capricorn</option>
+              <option>Aquarius</option>
+              <option>Pisces</option>
+            </select>
           </div>
           <div>
             <input

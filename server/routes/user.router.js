@@ -18,9 +18,22 @@ router.get('/', rejectUnauthenticated, (req, res) => {
 router.post('/register', (req, res, next) => {  
   const username = req.body.username;
   const password = encryptLib.encryptPassword(req.body.password);
+  const sun = req.body.sun;
+  const moon = req.body.moon;
+  const ascendent = req.body.ascendent;
+  const mercury = req.body.mercury;
+  const venus = req.body.venus;
+  const mars = req.body.mars;
+  const jupiter = req.body.jupiter;
+  const saturn = req.body.saturn;
+  const neptune = req.body.neptune;
+  const uranus = req.body.uranus;
+  const pluto = req.body.pluto;
 
-  const queryText = 'INSERT INTO "user" (username, password) VALUES ($1, $2) RETURNING id';
-  pool.query(queryText, [username, password])
+  const queryText = `INSERT INTO "user" (username, password, sun, moon, ascendent, mercury, venus, mars, jupiter, saturn, neptune, uranus, pluto) 
+  VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) 
+  RETURNING id`;
+  pool.query(queryText, [username, password, sun, moon, ascendent, mercury, venus, mars, jupiter, saturn, neptune, uranus, pluto])
     .then(() => res.sendStatus(201))
     .catch(() => res.sendStatus(500));
 });

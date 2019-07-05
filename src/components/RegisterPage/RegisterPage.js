@@ -1,25 +1,60 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 class RegisterPage extends Component {
   state = {
     username: '',
     password: '',
+    sun: '',
+    moon: '',
+    ascendent: '',
+    mercury: '',
+    venus: '',
+    mars: '',
+    jupiter: '',
+    saturn: '',
+    neptune: '',
+    uranus: '',
+    pluto: ''
+
   };
 
   registerUser = (event) => {
     event.preventDefault();
-
-    if (this.state.username && this.state.password) {
+//if this errors later, it may have to be one line :(//
+    if (this.state.username 
+      && this.state.password 
+      && this.state.sun 
+      && this.state.moon 
+      && this.state.ascendent 
+      && this.state.mercury 
+      && this.state.venus 
+      && this.state.mars 
+      && this.state.jupiter 
+      && this.state.saturn 
+      && this.state.neptune 
+      && this.state.uranus 
+      && this.state.pluto) {
       this.props.dispatch({
         type: 'REGISTER',
         payload: {
           username: this.state.username,
           password: this.state.password,
+          sun: this.state.sun,
+          moon: this.state.moon,
+          ascendent: this.state.ascendent,
+          mercury: this.state.mercury,
+          venus: this.state.venus,
+          mars: this.state.mars,
+          jupiter: this.state.jupiter,
+          saturn: this.state.saturn,
+          neptune: this.state.neptune,
+          uranus: this.state.uranus,
+          pluto: this.state.pluto,
         },
       });
     } else {
-      this.props.dispatch({type: 'REGISTRATION_INPUT_ERROR'});
+      this.props.dispatch({ type: 'REGISTRATION_INPUT_ERROR' });
     }
   } // end registerUser
 
@@ -77,7 +112,7 @@ class RegisterPage extends Component {
           <button
             type="button"
             className="link-button"
-            onClick={() => {this.props.dispatch({type: 'SET_TO_LOGIN_MODE'})}}
+            onClick={() => { this.props.dispatch({ type: 'SET_TO_LOGIN_MODE' }) }}
           >
             Login
           </button>

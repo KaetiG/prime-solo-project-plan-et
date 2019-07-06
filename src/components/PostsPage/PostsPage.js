@@ -12,6 +12,10 @@ class PostsPage extends Component {
         })
         console.log(event.target.value)
     }
+
+    handlePost = () =>{
+        console.log(this.state, 'button clicked');
+    }
  
     render() {
         return (
@@ -24,6 +28,7 @@ class PostsPage extends Component {
                     key={'entry'}
                     placeholder='My goals for this week are...'>
                 </textarea>
+                <button onClick={this.handlePost}>Post</button>
             </div>
         )
     }

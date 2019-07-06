@@ -23,7 +23,7 @@ CREATE TABLE "user" (
 CREATE TABLE "posts" (
 "id" SERIAL PRIMARY KEY,
 "user_id" INT REFERENCES "user" NOT NULL,
-"date_posted" DATE NOT NULL,
+"date_posted" DATE DEFAULT NOW() NOT NULL,
 "entry" VARCHAR NOT NULL
 );
 

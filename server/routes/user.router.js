@@ -64,4 +64,39 @@ pool.query(queryText, [id, entry])
 .catch(() => res.sendStatus(500));
 });
 
+router.get('/natalchart', (req, res) => {
+  const poolQuery = `SELECT "sun"."description_sun", 
+  "moon"."description_moon", 
+  "ascendent"."description_asc", 
+  "mercury"."description_mercury", 
+  "venus"."description_venus", 
+  "mars"."description_mars", 
+  "jupiter"."description_jupiter", 
+  "saturn"."description_saturn", 
+  "neptune"."description_neptune", 
+  "uranus"."description_uranus", 
+  "pluto"."description_pluto" FROM "profile"
+  JOIN "user" ON "user"."id"="profile"."user_id"
+  JOIN "sun" ON "sun"."id"="profile"."sun_id"
+  JOIN "moon" ON "moon"."id"="profile"."moon_id"
+  JOIN "ascendent" ON "ascendent"."id"="profile"."ascendent_id"
+  JOIN "mercury" ON "mercury"."id"="profile"."mercury_id"
+  JOIN "venus" ON "venus"."id"="profile"."venus_id"
+  JOIN "mars" ON "mars"."id"="profile"."mars_id"
+  JOIN "jupiter" ON "jupiter"."id"="profile"."jupiter_id"
+  JOIN "saturn" ON "saturn"."id"="profile"."saturn_id"
+  JOIN "neptune" ON "neptune"."id"="profile"."neptune_id"
+  JOIN "uranus" ON "uranus"."id"="profile"."uranus_id"
+  JOIN "pluto" ON "pluto"."id"="profile"."pluto_id"
+  WHERE "user"."id" = 1`;
+
+  pool.query(poolQuery)
+  .then((result) => { res.send(result.rows); })
+  .catch((err) => {
+    console.log('Error completing SELECT query', err);
+    res.sendStatus(500);
+  });
+})
+
+
 module.exports = router;

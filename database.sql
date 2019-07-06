@@ -30,7 +30,7 @@ CREATE TABLE "posts" (
 CREATE TABLE "sun" (
 "id" SERIAL PRIMARY KEY NOT NULL,
 "sign" VARCHAR (15) NOT NULL,
-"description" VARCHAR NOT NULL
+"description_sun" VARCHAR NOT NULL
 );
 
 INSERT INTO "sun" ("sign", "description")
@@ -72,7 +72,7 @@ VALUES ('Pisces', 'Pisces Suns are incredibly empathetic and understanding. Thei
 CREATE TABLE "moon" (
 "id" SERIAL PRIMARY KEY NOT NULL,
 "sign" VARCHAR (15) NOT NULL,
-"description" VARCHAR NOT NULL
+"description_moon" VARCHAR NOT NULL
 );
 
 INSERT INTO "moon" ("sign", "description")
@@ -114,7 +114,7 @@ VALUES ('Pisces', 'Pisces Moons typically have excellent intuition. They are com
 CREATE TABLE "ascendent" (
 "id" SERIAL PRIMARY KEY NOT NULL,
 "sign" VARCHAR (15) NOT NULL,
-"description" VARCHAR NOT NULL
+"description_asc" VARCHAR NOT NULL
 );
 
 INSERT INTO "ascendent" ("sign", "description")
@@ -156,7 +156,7 @@ VALUES ('Pisces', 'Pisces risings are very much akin to their element of water a
 CREATE TABLE "mercury" (
 "id" SERIAL PRIMARY KEY NOT NULL,
 "sign" VARCHAR (15) NOT NULL,
-"description" VARCHAR NOT NULL
+"description_mercury" VARCHAR NOT NULL
 );
 
 INSERT INTO "mercury" ("sign", "description")
@@ -198,7 +198,7 @@ VALUES ('Pisces', 'Mercury in Pisces will be more of a listener. They take in in
 CREATE TABLE "venus" (
 "id" SERIAL PRIMARY KEY NOT NULL,
 "sign" VARCHAR (15) NOT NULL,
-"description" VARCHAR NOT NULL
+"description_venus" VARCHAR NOT NULL
 );
 
 INSERT INTO "venus" ("sign", "description")
@@ -240,7 +240,7 @@ VALUES ('Pisces', 'Venus in Pisces is the ultimate romantic. Their love is uncon
 CREATE TABLE "mars" (
 "id" SERIAL PRIMARY KEY NOT NULL,
 "sign" VARCHAR (15) NOT NULL,
-"description" VARCHAR NOT NULL
+"description_mars" VARCHAR NOT NULL
 );
 
 INSERT INTO "mars" ("sign", "description")
@@ -282,7 +282,7 @@ VALUES ('Pisces', 'Mars in Pisces people rarely take action themselves. They wou
 CREATE TABLE "jupiter" (
 "id" SERIAL PRIMARY KEY NOT NULL,
 "sign" VARCHAR (15) NOT NULL,
-"description" VARCHAR NOT NULL
+"description_jupiter" VARCHAR NOT NULL
 );
 
 INSERT INTO "jupiter" ("sign", "description")
@@ -324,7 +324,7 @@ VALUES ('Pisces', 'When compassionate, charitable to those less fortunate, and d
 CREATE TABLE "saturn" (
 "id" SERIAL PRIMARY KEY NOT NULL,
 "sign" VARCHAR (15) NOT NULL,
-"description" VARCHAR NOT NULL
+"description_saturn" VARCHAR NOT NULL
 );
 
 INSERT INTO "saturn" ("sign", "description")
@@ -366,7 +366,7 @@ VALUES ('Pisces', 'Pisces Saturns have a strong spirituality and will sacrifice 
 CREATE TABLE "neptune" (
 "id" SERIAL PRIMARY KEY NOT NULL,
 "sign" VARCHAR (15) NOT NULL,
-"description" VARCHAR NOT NULL
+"description_neptune" VARCHAR NOT NULL
 );
 
 INSERT INTO "neptune" ("sign", "description")
@@ -408,7 +408,7 @@ VALUES ('Pisces', 'Neptune in Pisces people sometimes do not grasp reality very 
 CREATE TABLE "uranus" (
 "id" SERIAL PRIMARY KEY NOT NULL,
 "sign" VARCHAR (15) NOT NULL,
-"description" VARCHAR NOT NULL
+"description_uranus" VARCHAR NOT NULL
 );
 
 INSERT INTO "uranus" ("sign", "description")
@@ -450,7 +450,7 @@ VALUES ('Pisces', 'Uranus Pisces folk have wonderful intuition. They favor spiri
 CREATE TABLE "pluto" (
 "id" SERIAL PRIMARY KEY NOT NULL,
 "sign" VARCHAR (15) NOT NULL,
-"description" VARCHAR NOT NULL
+"description_pluto" VARCHAR NOT NULL
 );
 
 INSERT INTO "pluto" ("sign", "description")

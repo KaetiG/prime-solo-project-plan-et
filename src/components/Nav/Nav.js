@@ -1,15 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import LogOutButton from '../LogOutButton/LogOutButton';
 import './Nav.css';
 
 const Nav = (props) => (
-  <div className="nav">
-    <Link to="/home">
-      <h2 className="nav-title">Prime Solo Project</h2>
-    </Link>
-    <div className="nav-right">
+  
+    <div className="nav">
       <Link className="nav-link" to="/home">
         {/* Show this link if they are logged in or not,
         but call this link 'Home' if they are logged in,
@@ -19,18 +15,25 @@ const Nav = (props) => (
       {/* Show the link to the info page and the logout button if the user is logged in */}
       {props.user.id && (
         <>
-          <Link className="nav-link" to="/info">
-            Info Page
+          <Link className="nav-link" to="/profile">
+            Profile
           </Link>
-          <LogOutButton className="nav-link"/>
+          <Link className="nav-link" to="/moon">
+            Moon
+          </Link>
+          <Link className="nav-link" to="/planets">
+            Planets
+          </Link>
+          <Link className="nav-link" to="/signs">
+            Signs
+          </Link>
+          <Link className="nav-link" to="/posts">
+            Posts
+          </Link>
         </>
       )}
       {/* Always show this link since the about page is not protected */}
-      <Link className="nav-link" to="/about">
-        About
-      </Link>
     </div>
-  </div>
 );
 
 // Instead of taking everything from state, we just want the user

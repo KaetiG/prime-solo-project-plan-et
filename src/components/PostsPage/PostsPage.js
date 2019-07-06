@@ -2,9 +2,29 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class PostsPage extends Component {
+    state = {
+        entry: '',
+    }
+
+    handleInputEntry = (event) => {
+        this.setState({
+            entry: event.target.value
+        })
+        console.log(event.target.value)
+    }
+ 
     render() {
         return (
-            <></>
+            <div>
+                <textarea type="text"
+                    rows="8"
+                    cols="55"
+                    onChange={this.handleInputEntry}
+                    value={this.state.entry}
+                    key={'entry'}
+                    placeholder='My goals for this week are...'>
+                </textarea>
+            </div>
         )
     }
 }

@@ -6,3 +6,5 @@ const natalReducer = (state = [], action) => {
             return state;
     }
 }
+
+export default natalReducer;

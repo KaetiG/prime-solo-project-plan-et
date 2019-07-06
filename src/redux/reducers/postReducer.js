@@ -1,8 +1,12 @@
-const natalReducer = (state = [], action) => {
+const postReducer = (state = [], action) => {
     switch (action.type) {
         case 'SET_POSTS':
-            return action.payload;
+            return [ ...state, ...action.payload ];
+        case 'CLEAR_POSTS':
+            return [];
         default:
             return state;
     }
 }
+
+export default postReducer;

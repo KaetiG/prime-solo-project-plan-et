@@ -53,4 +53,15 @@ router.post('/logout', (req, res) => {
   res.sendStatus(200);
 });
 
+router.post('/posts', (req, res) => {
+const id = req.body.id
+const entry = req.body.entry
+
+const queryText = `INSERT INTO "posts" ("user_id", "entry")
+VALUES ($1, $2)`;
+pool.query(queryText, [id, entry])
+.then(() => res.sendStatus(201))
+.catch(() => res.sendStatus(500));
+});
+
 module.exports = router;

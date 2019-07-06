@@ -1,16 +1,25 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import LogOutButton from '../LogOutButton/LogOutButton';
 
-// This is one of our simplest components
-// It doesn't have local state, so it can be a function component.
-// It doesn't dispatch any redux actions or display any part of redux state
-// or even care what the redux state is, so it doesn't need 'connect()'
-
-const InfoPage = () => (
+// this could also be written with destructuring parameters as:
+// const UserPage = ({ user }) => (
+// and then instead of `props.user.username` you could use `user.username`
+const ProfilePage = (props) => (
   <div>
-    <p>
-      Info Page
-    </p>
+    <h1 id="welcome">
+      Welcome, { props.user.username }!
+    </h1>
+    <LogOutButton className="log-in" />
   </div>
 );
 
-export default InfoPage;
+// Instead of taking everything from state, we just want the user info.
+// if you wanted you could write this code like this:
+// const mapStateToProps = ({user}) => ({ user });
+const mapStateToProps = state => ({
+  user: state.user,
+});
+//<p>Your Sun is: {props.user.sun}</p>
+// this allows us to use <App /> in index.js
+export default connect(mapStateToProps)(ProfilePage);

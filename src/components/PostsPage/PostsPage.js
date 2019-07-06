@@ -5,7 +5,9 @@ class PostsPage extends Component {
     state = {
         entry: '',
     }
-
+    componentDidMount(){
+        this.props.dispatch({ type: "GET_POST_HISTORY", payload: this.props.user.id  });
+      }
     handleInputEntry = (event) => {
         this.setState({
             entry: event.target.value

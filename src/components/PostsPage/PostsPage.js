@@ -14,7 +14,9 @@ class PostsPage extends Component {
     }
 
     handlePost = () =>{
-        console.log(this.state, 'button clicked');
+        //const payload = [this.props.user.id, this.state.entry]
+        this.props.dispatch({ type: 'POST_ENTRY', payload: {id: this.props.user.id, ...this.state} })
+        console.log(this.props.user.id, this.state.entry);
     }
  
     render() {

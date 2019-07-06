@@ -23,6 +23,7 @@ class PostsPage extends Component {
  
     render() {
         return (
+            <>
             <div>
                 <textarea type="text"
                     rows="8"
@@ -34,6 +35,11 @@ class PostsPage extends Component {
                 </textarea>
                 <button onClick={this.handlePost}>Post</button>
             </div>
+            <div>
+                {this.props.postReducer.map((post) => <div key={post.id}>
+                            <p>{post.entry}<button onClick={this.handleDelete} value={post.id}>Delete</button></p></div>)}
+            </div>
+            </>
         )
     }
 }
@@ -41,9 +47,10 @@ class PostsPage extends Component {
 // Instead of taking everything from state, we just want the user info.
 // if you wanted you could write this code like this:
 // const mapStateToProps = ({user}) => ({ user });
-const mapStateToProps = state => ({
+  const mapStateToProps = state => ({
     user: state.user,
-});
+    postReducer: state.postReducer,
+  });
 
 // this allows us to use <App /> in index.js
 export default connect(mapStateToProps)(PostsPage);

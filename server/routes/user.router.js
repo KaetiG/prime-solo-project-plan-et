@@ -64,6 +64,17 @@ pool.query(queryText, [id, entry])
 .catch(() => res.sendStatus(500));
 });
 
+router.get('/posts/:id', (req, res) =>{
+const poolQuery = `SELECT "date_posted", "entry" FROM "posts"
+WHERE "user_id" = $1;`  
+  pool.query(poolQuery, [req.params.id])
+  .then((result) => { res.send(result.rows); })
+  .catch((err) => {
+    console.log('Error completing SELECT query', err);
+    res.sendStatus(500);
+  });
+})
+
 router.get('/natalchart', (req, res) => {
   const poolQuery = `SELECT "sun"."description_sun", 
   "moon"."description_moon", 
@@ -97,6 +108,8 @@ router.get('/natalchart', (req, res) => {
     res.sendStatus(500);
   });
 })
+
+
 
 
 module.exports = router;

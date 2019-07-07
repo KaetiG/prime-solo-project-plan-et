@@ -66,7 +66,8 @@ pool.query(queryText, [id, entry])
 
 router.get('/posts/:id', (req, res) =>{
 const poolQuery = `SELECT * FROM "posts"
-WHERE "user_id" = $1;`  
+WHERE "user_id" = $1
+ORDER BY "date_posted" DESC;`  
   pool.query(poolQuery, [req.params.id])
   .then((result) => { res.send(result.rows); })
   .catch((err) => {
@@ -75,7 +76,7 @@ WHERE "user_id" = $1;`
   });
 })
 
-router.get('/natalchart', (req, res) => {
+router.get('/natalchart/:id', (req, res) => {
   const poolQuery = `SELECT "sun"."description_sun", 
   "moon"."description_moon", 
   "ascendent"."description_asc", 
@@ -99,9 +100,9 @@ router.get('/natalchart', (req, res) => {
   JOIN "neptune" ON "neptune"."id"="profile"."neptune_id"
   JOIN "uranus" ON "uranus"."id"="profile"."uranus_id"
   JOIN "pluto" ON "pluto"."id"="profile"."pluto_id"
-  WHERE "user"."id" = 1`;
+  WHERE "user"."id" = $1`;
 
-  pool.query(poolQuery)
+  pool.query(poolQuery, [req.params.id])
   .then((result) => { res.send(result.rows); })
   .catch((err) => {
     console.log('Error completing SELECT query', err);

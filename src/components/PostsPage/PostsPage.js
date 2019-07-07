@@ -38,6 +38,7 @@ class PostsPage extends Component {
             <div>
                 {this.props.postReducer.map((post) => <div key={post.id}>
                             <p>{post.entry}<button onClick={this.handleDelete} value={post.id}>Delete</button></p></div>)}
+                            {/* change how this displays */}
             </div>
             </>
         )

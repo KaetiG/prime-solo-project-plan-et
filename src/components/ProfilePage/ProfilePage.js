@@ -7,7 +7,7 @@ import LogOutButton from '../LogOutButton/LogOutButton';
 // and then instead of `props.user.username` you could use `user.username`
 class ProfilePage extends Component {
 componentDidMount(){
-  this.props.dispatch({ type: "GET_NATAL_CHART" });
+  this.props.dispatch({ type: "GET_NATAL_CHART",  payload: this.props.user.id });
 }
 render(){
   return(

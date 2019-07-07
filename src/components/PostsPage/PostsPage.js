@@ -20,6 +20,10 @@ class PostsPage extends Component {
         this.props.dispatch({ type: 'POST_ENTRY', payload: {id: this.props.user.id, ...this.state} })
         console.log(this.props.user.id, this.state.entry);
     }
+
+    handleDelete = () => {
+        console.log('delete clicked')
+    }
  
     render() {
         return (

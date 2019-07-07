@@ -76,6 +76,16 @@ ORDER BY "date_posted" DESC;`
   });
 })
 
+router.delete('/posts/:id', (req, res) => {
+  const queryText = 'DELETE FROM "posts" WHERE id=$1';
+  pool.query(queryText, [req.params.id])
+    .then(() => { res.sendStatus(200); })
+    .catch((err) => {
+      console.log('Error completing DELETE query', err);
+      res.sendStatus(500);
+    });
+});
+
 router.get('/natalchart/:id', (req, res) => {
   const poolQuery = `SELECT "sun"."description_sun", 
   "moon"."description_moon", 

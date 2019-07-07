@@ -14,7 +14,7 @@ function* newPost(action) {
     try {
         yield axios.post('/api/user/posts', action.payload);
         yield put({type: 'CLEAR_POSTS'});
-        yield put({ type: 'GET_POST_HISTORY', payload: action.payload.id });
+        yield put({ type: 'GET_POST_HISTORY', payload: action.payload });
       } catch(error) {
         console.log('error posting entry', error);
       }

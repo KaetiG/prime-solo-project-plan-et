@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import BootstrapSwitchButton from 'bootstrap-switch-button-react'
-import MoonTransits from './MoonTransits'
-import MoonNatal from './MoonNatal'
+import BootstrapSwitchButton from 'bootstrap-switch-button-react';
+import MoonTransits from './MoonTransits';
+import MoonNatal from './MoonNatal';
+import  { ReactComponent as Moon } from '../icons/moon.svg';
 
 class MoonPage extends Component {
 state = {
     isNatalActive: false
+
 }
 
     componentDidMount(){
@@ -14,7 +16,11 @@ state = {
     render() {
         return (
             <>
+            <div className="moonPageDiv">
                 <h1>Moon</h1>
+                <Moon height='80px' />
+                <br/>
+                <br/>
                 {/* image icon here */}
                 <p>The Moon represents your emotional self.
                     It transits through the signs quickly, completing its cycle approximately every 28 days.
@@ -34,6 +40,9 @@ state = {
                         console.log(this.state)
                     }}
                 />
+            </div>
+                <br/>
+
                 {this.state.isNatalActive === false 
                 ? 
                 <MoonNatal />

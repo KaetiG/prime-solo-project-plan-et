@@ -26,7 +26,8 @@ class PostsPage extends Component {
         console.log('delete clicked', event.target.value)
     }
 
-    handleEdit = () => {
+    handleEdit = (event) => {
+        this.props.dispatch({ type: "GET_SINGLE_POST", payload: {id: event.target.value, user: this.props.user.id} })
         this.props.history.push('/edit')
     }
  
@@ -46,7 +47,7 @@ class PostsPage extends Component {
             </div>
             <div>
                 {this.props.postReducer.map((post) => <div key={post.id}>
-                            <p>{post.entry}
+                            <p>{post.date_posted}{post.entry}
                             <button 
                             onClick={this.handleDelete} 
                             value={post.id}>Delete</button>

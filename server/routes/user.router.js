@@ -86,6 +86,18 @@ router.delete('/posts/:id', (req, res) => {
       res.sendStatus(500);
     });
 });
+router.get('/singlepost/:id', (req, res) => {
+  console.log('router is hit', req.params.id, req.user.id)
+  const queryText = `SELECT "posts"."id", "posts"."entry" FROM "posts"
+  JOIN "user" ON "user"."id"="posts"."user_id"
+  WHERE "posts"."id" = $1 AND "posts"."user_id" = $2;`
+  pool.query(queryText, [req.params.id, req.user.id])
+  .then((result) => { res.send(result.rows); })
+    .catch((err) => {
+      console.log('Error completing GET query', err);
+      res.sendStatus(500);
+    });
+});
 //---------UPDATE POST----------//
 router.put('/posts/:id', (req, res) =>{
   const queryText = `UPDATE "posts"
@@ -95,7 +107,7 @@ router.put('/posts/:id', (req, res) =>{
   pool.query(queryText, queryValues)
   .then(() => { res.sendStatus(200); })
   .catch((err) => {
-    console.log('Error completing SELECT plant query', err);
+    console.log('Error completing SELECT post query', err);
     res.sendStatus(500);
   });
 })

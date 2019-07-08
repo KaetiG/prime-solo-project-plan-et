@@ -5,13 +5,14 @@ class EditPage extends Component {
     state = {
         entry: '',
     }
-    handleSave = (id) => {
+    handleSave = () => {
         this.props.dispatch({
             type: 'UPDATE_POST', payload: {...this.state,
                 user: this.props.user.id, 
-                id: this.props.postReducer.id, 
+                id: this.props.singlePostReducer[0].id, 
                 }
         });
+        console.log(this.props.singlePostReducer.id)
         this.props.history.push('/posts');
     }
 
@@ -34,6 +35,9 @@ class EditPage extends Component {
                 </textarea>
                 <button onClick={() => this.props.history.push('/posts')}>Cancel</button>
                 <button onClick={this.handleSave}>Save</button>
+                <pre>
+                    {JSON.stringify(this.props.singlePostReducer, null, 2)}
+                </pre>
             </>
         )
     }
@@ -41,7 +45,7 @@ class EditPage extends Component {
 
 const mapStateToProps = state => ({
     user: state.user,
-    postReducer: state.postReducer,
+    singlePostReducer: state.singlePostReducer,
   });
 
 export default connect(mapStateToProps)(EditPage);

@@ -22,6 +22,7 @@ function* newPost(action) {
 
 function* updatePost(action) {
   yield axios.put(`/api/user/posts/`+ action.payload.id, action.payload, action.payload.user);
+  yield put({type: 'CLEAR_POSTS'});
   yield put({type: 'GET_POST_HISTORY', payload: action.payload.user})
 }
 

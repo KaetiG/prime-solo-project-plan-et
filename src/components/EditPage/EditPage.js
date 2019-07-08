@@ -32,7 +32,7 @@ class EditPage extends Component {
                     value={this.state.entry}
                     key={'entry'}
                     placeholder='My goals for this week are...'>
-                </textarea>
+                </textarea><br/>
                 <button onClick={() => this.props.history.push('/posts')}>Cancel</button>
                 <button onClick={this.handleSave}>Save</button>
                 <pre>

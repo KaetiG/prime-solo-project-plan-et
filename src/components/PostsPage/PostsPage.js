@@ -47,7 +47,7 @@ class PostsPage extends Component {
             </div>
             <div>
                 {this.props.postReducer.map((post) => <div key={post.id}>
-                            <p>{post.date_posted}{post.entry}
+                            <p>{post.date_posted}<br />{post.entry}<br />
                             <button 
                             onClick={this.handleDelete} 
                             value={post.id}>Delete</button>

@@ -113,7 +113,7 @@ router.put('/posts/:id', (req, res) =>{
 })
 //--------PROFILE ROUTES---------//
 
-router.get('/natalchart/:id', (req, res) => {
+router.get('/natalchart/', (req, res) => {
   const poolQuery = `SELECT "sun"."description_sun", 
   "moon"."description_moon", 
   "ascendent"."description_asc", 
@@ -139,7 +139,7 @@ router.get('/natalchart/:id', (req, res) => {
   JOIN "pluto" ON "pluto"."id"="profile"."pluto_id"
   WHERE "user"."id" = $1`;
 
-  pool.query(poolQuery, [req.params.id])
+  pool.query(poolQuery, [req.user.id])
   .then((result) => { res.send(result.rows); })
   .catch((err) => {
     console.log('Error completing SELECT query', err);

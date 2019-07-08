@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import LogOutButton from '../LogOutButton/LogOutButton';
 
+import  { ReactComponent as Moon } from '../icons/moon.svg';
+
+
 // this could also be written with destructuring parameters as:
 // const UserPage = ({ user }) => (
 // and then instead of `props.user.username` you could use `user.username`
@@ -17,10 +20,13 @@ class ProfilePage extends Component {
           </h1>
       <div>
             {this.props.natalReducer.map((description) => <div key={description.id}>
+           
               <h3>Sun</h3>
               <p>{description.description_sun}</p>
+              <Moon height='80px'/>
               <h3>Moon</h3>
               <p>{description.description_moon}</p>
+
               <h3>Ascendent/Rising</h3>
               <p>{description.description_asc}</p>
               <h3>Mercury</h3>

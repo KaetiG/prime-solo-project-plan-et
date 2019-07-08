@@ -25,6 +25,10 @@ class PostsPage extends Component {
         this.props.dispatch({ type: "DELETE_POST", payload: {user: this.props.user.id, id: event.target.value} });
         console.log('delete clicked', event.target.value)
     }
+
+    handleEdit = () => {
+        this.props.history.push('/edit')
+    }
  
     render() {
         return (
@@ -42,7 +46,13 @@ class PostsPage extends Component {
             </div>
             <div>
                 {this.props.postReducer.map((post) => <div key={post.id}>
-                            <p>{post.entry}<button onClick={this.handleDelete} value={post.id}>Delete</button></p></div>)}
+                            <p>{post.entry}
+                            <button 
+                            onClick={this.handleDelete} 
+                            value={post.id}>Delete</button>
+                            <button 
+                            onClick={this.handleEdit} 
+                            value={post.id}>Edit</button></p></div>)}
                             {/* change how this displays */}
             </div>
             </>

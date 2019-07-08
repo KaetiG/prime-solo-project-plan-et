@@ -13,8 +13,7 @@ router.get('/', rejectUnauthenticated, (req, res) => {
 });
 
 // Handles POST request with new user data
-// The only thing different from this and every other post we've seen
-// is that the password gets encrypted before being inserted
+//--------------REGISTRATION-----------------//
 router.post('/register', (req, res, next) => {  
   const username = req.body.username;
   const password = encryptLib.encryptPassword(req.body.password);
@@ -53,6 +52,8 @@ router.post('/logout', (req, res) => {
   res.sendStatus(200);
 });
 
+//-----------POSTS PAGE'S CRUD ROUTES-------------//
+//----NEW POSTS----//
 router.post('/posts', (req, res) => {
 const id = req.body.id
 const entry = req.body.entry
@@ -63,7 +64,7 @@ pool.query(queryText, [id, entry])
 .then(() => res.sendStatus(201))
 .catch(() => res.sendStatus(500));
 });
-
+//-----GET POST HISTORY-------//
 router.get('/posts/:id', (req, res) =>{
 const poolQuery = `SELECT * FROM "posts"
 WHERE "user_id" = $1
@@ -75,7 +76,7 @@ ORDER BY "date_posted" DESC;`
     res.sendStatus(500);
   });
 })
-
+//-------DELETE POST----------//
 router.delete('/posts/:id', (req, res) => {
   const queryText = 'DELETE FROM "posts" WHERE id=$1';
   pool.query(queryText, [req.params.id])
@@ -85,6 +86,20 @@ router.delete('/posts/:id', (req, res) => {
       res.sendStatus(500);
     });
 });
+//---------UPDATE POST----------//
+router.put('/posts/:id', (req, res) =>{
+  const queryText = `UPDATE "posts"
+  SET "entry" = $1
+  WHERE "id" = $2;`
+  const queryValues = [req.body.entry, req.params.id]
+  pool.query(queryText, queryValues)
+  .then(() => { res.sendStatus(200); })
+  .catch((err) => {
+    console.log('Error completing SELECT plant query', err);
+    res.sendStatus(500);
+  });
+})
+//--------PROFILE ROUTES---------//
 
 router.get('/natalchart/:id', (req, res) => {
   const poolQuery = `SELECT "sun"."description_sun", 

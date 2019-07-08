@@ -9,7 +9,6 @@ import {
 import { connect } from 'react-redux';
 
 import Nav from '../Nav/Nav';
-import Footer from '../Footer/Footer';
 
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute'
 
@@ -19,7 +18,7 @@ import MoonPage from '../MoonPage/MoonPage';
 import PlanetsPage from '../PlanetsPage/PlanetsPage';
 import SignsPage from '../SignsPage/SignsPage';
 import PostsPage from '../PostsPage/PostsPage';
-import EditPage from '../EditPage/EditPage';
+import EditPage from '../PostsPage/EditPage';
 
 import './App.css';
 
@@ -80,7 +79,6 @@ class App extends Component {
             {/* If none of the other routes matched, we will show a 404. */}
             <Route render={() => <h1>404</h1>} />
           </Switch>
-          <Footer />
         </div>
       </Router>
     )

@@ -35,9 +35,9 @@ class EditPage extends Component {
                 </textarea><br/>
                 <button onClick={() => this.props.history.push('/posts')}>Cancel</button>
                 <button onClick={this.handleSave}>Save</button>
-                <pre>
+                {/* <pre>
                     {JSON.stringify(this.props.singlePostReducer, null, 2)}
-                </pre>
+                </pre> */}
             </>
         )
     }

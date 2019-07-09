@@ -15,7 +15,6 @@ import ProtectedRoute from '../ProtectedRoute/ProtectedRoute'
 import HomePage from '../HomePage/HomePage';
 import ProfilePage from '../ProfilePage/ProfilePage';
 import MoonPage from '../MoonPage/MoonPage';
-import SignsPage from '../SignsPage/SignsPage';
 import PostsPage from '../PostsPage/PostsPage';
 
 import EditPage from '../PostsPage/EditPage';
@@ -111,12 +110,6 @@ class App extends Component {
               exact
               path="/planets/pluto"
               component={PlutoPage}
-            />
-            {/* signs pages, also may need to move to another component */}
-            <ProtectedRoute
-              exact
-              path="/signs"
-              component={SignsPage}
             />
             <ProtectedRoute
               exact

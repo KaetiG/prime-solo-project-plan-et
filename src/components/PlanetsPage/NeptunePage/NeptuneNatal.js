@@ -20,40 +20,52 @@ class NeptuneNatal extends Component {
             <div className="natalTransitDiv">
                     <Aries height='80px' />
                     <h4>Aries</h4>
-                    <p></p>
+                    <p>Neptune in Aries people have incredibly strong beliefs and will take on many creative projects. 
+                        They have a desire to improve life for everyone.</p>
                     <Taurus height='80px' />
                     <h4>Taurus</h4>
-                    <p></p>
+                    <p>Neptune in Taurus people love the arts and anything beautiful. 
+                        They have an eye on their dreams and can become obsessed with them.</p>
                     <Gemini height='80px' />
                     <h4>Gemini</h4>
-                    <p></p>
+                    <p>This placement grants inspiration in their words. They get bored easily. 
+                        Neptune in Gemini people may find studies in communications and mathematics.</p>
                     <Cancer height='80px' />
                     <h4>Cancer</h4>
-                    <p></p>
+                    <p>The dreams of Neptune Cancers surround their homes and their families. 
+                        They are incredibly dedicated to them.</p>
                     <Leo height='80px' />
                     <h4>Leo</h4>
-                    <p></p>
+                    <p>Neptune Leos are kids at heart no matter the age. 
+                        They are attracted to entertainment and drama industries. They are very creative placements as well.</p>
                     <Virgo height='80px' />
                     <h4>Virgo</h4>
-                    <p></p>
+                    <p>Neptune Virgos are very health conscious and will try to get those around them to adopt healthier lifestyles.</p>
                     <Libra height='80px' />
                     <h4>Libra</h4>
-                    <p></p>
+                    <p>Neptune Libras are incredibly indecisive. 
+                        This placement wants the whole world in perfect balance, not just their own lives.</p>
                     <Scorpio height='80px' />
                     <h4>Scorpio</h4>
-                    <p></p>
+                    <p>Neptune Scorpios want to transform the world. 
+                        They also wish to transcend themselves and are often interested in deeply spiritual experiences. 
+                        They must be wary of addiction</p>
                     <Sagittarius height='80px' />
                     <h4>Sagittarius</h4>
-                    <p></p>
+                    <p>Neptune in Sagittarius people gravitate to science fiction and fantasy. 
+                        They enjoy expanding their world.</p>
                     <Capricorn height='80px' />
                     <h4>Capricorn</h4>
-                    <p></p>
+                    <p>Neptune Capricorns are inspired through arts. 
+                        They wish the world rewarded hard work more than it does and their creativity is fairly practical.</p>
                     <Aquarius height='80px' />
                     <h4>Aquarius</h4>
-                    <p></p>
+                    <p>Neptune in Aquarius people are focused on the future. 
+                        They thrive on their originality and are pure humanitarians at heart.</p>
                     <Pisces height='80px' />
                     <h4>Pisces</h4>
-                    <p></p>
+                    <p>Neptune in Pisces people sometimes do not grasp reality very well. 
+                        They are spiritual and are attracted to the arts. They will sacrifice a lot in order to help others.</p>
                 </div>
             </>
         )

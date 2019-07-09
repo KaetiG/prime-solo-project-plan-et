@@ -12,13 +12,15 @@ import Nav from '../Nav/Nav';
 
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute'
 
-import ProfilePage from '../ProfilePage/ProfilePage';
 import HomePage from '../HomePage/HomePage';
+import ProfilePage from '../ProfilePage/ProfilePage';
 import MoonPage from '../MoonPage/MoonPage';
 import PlanetsPage from '../PlanetsPage/PlanetsPage';
 import SignsPage from '../SignsPage/SignsPage';
 import PostsPage from '../PostsPage/PostsPage';
+
 import EditPage from '../PostsPage/EditPage';
+import MercuryPage from '../PlanetsPage//Mercury/MercuryPage';
 
 import './App.css';
 
@@ -56,11 +58,18 @@ class App extends Component {
               path="/moon"
               component={MoonPage}
             />
+            {/* possibly need to move these to a new component  */}
             <ProtectedRoute
               exact
-              path="/planets"
+              path="/planets/sun"
               component={PlanetsPage}
             />
+            <ProtectedRoute
+              exact
+              path="/planets/mercury"
+              component={MercuryPage}
+            />
+            {/* signs pages, also may need to move to another component */}
             <ProtectedRoute
               exact
               path="/signs"

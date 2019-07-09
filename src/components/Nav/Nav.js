@@ -21,7 +21,7 @@ const Nav = (props) => (
           <Link className="nav-link" to="/moon">
             Moon
           </Link>
-          <Link className="nav-link" to="/planets">
+          <Link className="nav-link" to="/planets/sun">
             Planets
           </Link>
           <Link className="nav-link" to="/signs">

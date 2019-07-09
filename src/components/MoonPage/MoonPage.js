@@ -16,7 +16,7 @@ state = {
     render() {
         return (
             <>
-            <div className="moonPageDiv">
+            <div className="planetPageDiv">
                 <h1>Moon</h1>
                 <Moon height='80px' />
                 <br/>
@@ -32,8 +32,8 @@ state = {
                     checked={false}
                     onlabel='Transit'
                     offlabel='Natal'
-                    onstyle="outline-info" 
-                    offstyle="outline-info"
+                    onstyle="info" 
+                    offstyle="info"
                     width={100}
                     onChange={(checked: boolean) => {
                         this.setState({ isNatalActive: checked })

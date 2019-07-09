@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import BootstrapSwitchButton from 'bootstrap-switch-button-react';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
-import { ReactComponent as Sun } from '../icons/sun2.svg';
+// import { ReactComponent as Sun } from '/icons/sun2.svg';
 
-class PlanetPage extends Component {
+class MercuryPage extends Component {
     state = {
         isNatalActive: false
 
@@ -18,7 +18,7 @@ class PlanetPage extends Component {
             <>
                 <div className="planetPageDiv">
                     <h1>Sun</h1>
-                    <Sun height='80px' />
+                    {/* <Sun height='80px' /> */}
                     <br />
                     <br />
                     {/* image icon here */}
@@ -28,7 +28,7 @@ class PlanetPage extends Component {
                     </p>
                     <br />
                                 <DropdownButton id="dropdown-basic-button" title="Dropdown button">
-                                    <Dropdown.Item href="#/planets/mercury">Mercury</Dropdown.Item>
+                                    <Dropdown.Item href="#/planets/sun">Sun</Dropdown.Item>
                                     <Dropdown.Item href="#/planets/venus">Venus</Dropdown.Item>
                                     <Dropdown.Item href="#/planets/mars">Mars</Dropdown.Item>
                                 </DropdownButton>
@@ -63,4 +63,4 @@ class PlanetPage extends Component {
     }
 }
 
-export default PlanetPage;
+export default MercuryPage;

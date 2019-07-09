@@ -48,7 +48,7 @@ input {
     cursor: pointer;
 }
 
-.moonPageDiv {
+.planetPageDiv {
     text-align: center;
 }
 
@@ -58,4 +58,15 @@ input {
 
 .profileDiv {
     text-align: center;
+}
+
+#dropdown-basic-button {
+    background-color: #790fcf;
+    border: none;
+    outline: none;
+}
+
+#natalTransitToggle {
+    border-color: rgb(0, 162, 183);
+    outline: none;
 }

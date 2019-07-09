@@ -24,7 +24,6 @@ class SunPage extends Component {
                     <Sun height='80px' />
                     <br />
                     <br />
-                    {/* image icon here */}
                     <p>The Sun represents your main outward personality.
                         It is your ego, and the main driving force behind your actions and what makes you, you.
                         The Sun transits through one sign per month, and is often referred to as that sign's "season".

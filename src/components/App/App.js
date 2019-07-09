@@ -20,7 +20,14 @@ import PostsPage from '../PostsPage/PostsPage';
 
 import EditPage from '../PostsPage/EditPage';
 import SunPage from '../PlanetsPage/SunPage/SunPage';
-import MercuryPage from '../PlanetsPage//Mercury/MercuryPage';
+import MercuryPage from '../PlanetsPage/MercuryPage/MercuryPage';
+import VenusPage from '../PlanetsPage/VenusPage/VenusPage';
+import MarsPage from '../PlanetsPage/MarsPage/MarsPage';
+import JupiterPage from '../PlanetsPage/JupiterPage/JupiterPage';
+import SaturnPage from '../PlanetsPage/SaturnPage/SaturnPage';
+import NeptunePage from '../PlanetsPage/NeptunePage/NeptunePage';
+import UranusPage from '../PlanetsPage/UranusPage/UranusPage';
+import PlutoPage from '../PlanetsPage/PlutoPage/PlutoPage';
 
 import './App.css';
 
@@ -68,6 +75,41 @@ class App extends Component {
               exact
               path="/planets/mercury"
               component={MercuryPage}
+            />
+            <ProtectedRoute
+              exact
+              path="/planets/venus"
+              component={VenusPage}
+            />
+            <ProtectedRoute
+              exact
+              path="/planets/mars"
+              component={MarsPage}
+            />
+            <ProtectedRoute
+              exact
+              path="/planets/jupiter"
+              component={JupiterPage}
+            />
+            <ProtectedRoute
+              exact
+              path="/planets/saturn"
+              component={SaturnPage}
+            />
+            <ProtectedRoute
+              exact
+              path="/planets/neptune"
+              component={NeptunePage}
+            />
+            <ProtectedRoute
+              exact
+              path="/planets/uranus"
+              component={UranusPage}
+            />
+            <ProtectedRoute
+              exact
+              path="/planets/pluto"
+              component={PlutoPage}
             />
             {/* signs pages, also may need to move to another component */}
             <ProtectedRoute

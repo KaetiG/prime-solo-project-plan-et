@@ -16,7 +16,7 @@ class MoonNatal extends Component {
     render() {
         return (
             <>
-                <div className="moonNatalDiv">
+                <div className="natalTransitDiv">
                     <Aries height='80px'/>
                     <h4>Aries</h4>
                     <p>Aries moons are the “go, go, go” people.

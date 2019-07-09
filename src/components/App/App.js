@@ -15,11 +15,11 @@ import ProtectedRoute from '../ProtectedRoute/ProtectedRoute'
 import HomePage from '../HomePage/HomePage';
 import ProfilePage from '../ProfilePage/ProfilePage';
 import MoonPage from '../MoonPage/MoonPage';
-import PlanetsPage from '../PlanetsPage/PlanetsPage';
 import SignsPage from '../SignsPage/SignsPage';
 import PostsPage from '../PostsPage/PostsPage';
 
 import EditPage from '../PostsPage/EditPage';
+import SunPage from '../PlanetsPage/SunPage/SunPage';
 import MercuryPage from '../PlanetsPage//Mercury/MercuryPage';
 
 import './App.css';
@@ -62,7 +62,7 @@ class App extends Component {
             <ProtectedRoute
               exact
               path="/planets/sun"
-              component={PlanetsPage}
+              component={SunPage}
             />
             <ProtectedRoute
               exact

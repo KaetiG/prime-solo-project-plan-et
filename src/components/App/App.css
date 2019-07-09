@@ -52,7 +52,7 @@ input {
     text-align: center;
 }
 
-.moonNatalDiv {
+.natalTransitDiv {
     text-align: center;
 }
 
@@ -63,10 +63,13 @@ input {
 #dropdown-basic-button {
     background-color: #790fcf;
     border: none;
-    outline: none;
+    outline-color: gray;
 }
+
+
 
 #natalTransitToggle {
     border-color: rgb(0, 162, 183);
     outline: none;
 }
+

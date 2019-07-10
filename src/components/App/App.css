@@ -9,9 +9,7 @@ body {
 }
 
 form {
-    background-color: #dbd5d5;
     width: 30%;
-    /* height: 250px; */
     margin: 20px auto;
     padding: 25px;
     border-radius: 2px;
@@ -48,6 +46,10 @@ input {
     cursor: pointer;
 }
 
+postPageDiv {
+    text-align: center;
+}
+
 .planetPageDiv {
     text-align: center;
 }
@@ -66,10 +68,19 @@ input {
     outline-color: gray;
 }
 
-
-
 #natalTransitToggle {
     border-color: rgb(0, 162, 183);
     outline: none;
 }
+
+.editButton {
+    background-color: #790fcf;
+    color: white;
+}
+
+.deleteButton {
+    background-color: #acacac;
+}
+
+
 

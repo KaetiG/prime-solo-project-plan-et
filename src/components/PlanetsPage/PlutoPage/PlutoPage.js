@@ -24,7 +24,9 @@ class PlutoPage extends Component {
                     <Pluto height='80px' />
                     <br />
                     <br />
-                    <p>Pluto info
+                    <p>Pluto represents destruction and rebirth. It ties into one's spiritual growth over time. 
+                        Pluto rules over Scorpio and the Eighth House. Jupiter and the rest of the outer planets transit through the signs very slowly, 
+                        thus their influences on the signs are not as detailed as the planets closest to Earth/the Sun.
                     </p>
                     <br />
                     <DropdownButton id="dropdown-basic-button" title="Dropdown button">

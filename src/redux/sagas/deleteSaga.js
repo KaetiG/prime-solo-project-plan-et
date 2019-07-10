@@ -7,7 +7,7 @@ function* deletePost(action) {
         yield put({ type: 'CLEAR_POSTS' });
         yield put({ type: 'GET_POST_HISTORY', payload: action.payload.user });
     } catch (error) {
-        console.log('error deleting plant', error);
+        console.log('error deleting post', error);
     }
 }
 

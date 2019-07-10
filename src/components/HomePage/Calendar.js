@@ -46,6 +46,17 @@ const planetStyles = `.DayPicker-Day--mars {
 };
 
 class Calendar extends Component {
+    handleDayClick = (date) => {
+        console.log(date)
+        console.log(modifiers.newmoon, 'new moon mod')
+        if (new Date(2019, 6, 2) === date){
+            alert('new moon')
+        }
+        else if (modifiers.mercury === date){
+            alert('mercury enters cancer')
+        }
+    }    
+    
     render() {
         return (
             <>
@@ -54,6 +65,7 @@ class Calendar extends Component {
                 <DayPicker 
                     modifiers={modifiers}
                     month={new Date(2019, 6)} 
+                    onDayClick={this.handleDayClick}
                 />
             </div>
         

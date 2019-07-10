@@ -24,7 +24,8 @@ class SaturnPage extends Component {
                     <Saturn height='80px' />
                     <br />
                     <br />
-                    <p>Saturn info
+                    <p>Saturn represents restriciton, responsibility, and limitation. It brings structure and promotes self control. 
+                        Saturn rules over Capricorn and the Tenth House.
                     </p>
                     <br />
                     <DropdownButton id="dropdown-basic-button" title="Dropdown button">

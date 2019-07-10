@@ -24,7 +24,10 @@ class JupiterPage extends Component {
                     <Jupiter height='80px' />
                     <br />
                     <br />
-                    <p>Jupiter info
+                    <p>Jupiter represents luck and how one attains success and wealth in their lives. 
+                        It rules over Sagittarius and the Ninth House. 
+                        Jupiter and the rest of the outer planets transit through the signs very slowly, 
+                        thus their influences on the signs are not as detailed as the planets closest to Earth/the Sun.
                     </p>
                     <br />
                     <DropdownButton id="dropdown-basic-button" title="Dropdown button">

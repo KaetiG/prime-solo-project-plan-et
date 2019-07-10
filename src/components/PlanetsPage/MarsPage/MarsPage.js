@@ -24,7 +24,9 @@ class MarsPage extends Component {
                     <Mars height='80px' />
                     <br />
                     <br />
-                    <p>Mars info
+                    <p>Mars represents one's assertion and impulsive tendancies. It also represents one's sexuality. 
+                        Mars is the masculine side of relationships whereas Venus represents the feminine side. 
+                        Mars rules over Aries and the First House.
                     </p>
                     <br />
                     <DropdownButton id="dropdown-basic-button" title="Dropdown button">

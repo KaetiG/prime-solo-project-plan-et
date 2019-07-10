@@ -24,7 +24,9 @@ class NeptunePage extends Component {
                     <Neptune height='80px' />
                     <br />
                     <br />
-                    <p>Neptune info
+                    <p>Neptune represents dreams, idealism, artistry, and empathy. It rules over Pisces and the Twelfth House.
+                    Neptune and the rest of the outer planets transit through the signs very slowly, 
+                        thus their influences on the signs are not as detailed as the planets closest to Earth/the Sun.
                     </p>
                     <br />
                     <DropdownButton id="dropdown-basic-button" title="Dropdown button">

@@ -25,19 +25,27 @@ class EditPage extends Component {
     render() {
         return (
             <>
-                <textarea type="text"
-                    rows="8"
-                    cols="55"
+            <div class="container-fluid" className="postPageDiv">
+                
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <textarea
+                        class="col-sm-3"
+                        type="text"
+                        rows="5"
+                        cols="25"
                     onChange={this.handleEditChange}
                     value={this.state.entry}
                     key={'entry'}
                     placeholder='My goals for this week are...'>
-                </textarea><br/>
-                <button onClick={() => this.props.history.push('/posts')}>Cancel</button>
-                <button onClick={this.handleSave}>Save</button>
-                {/* <pre>
-                    {JSON.stringify(this.props.singlePostReducer, null, 2)}
-                </pre> */}
+                </textarea></div>
+                <div class="row">
+                <div class="col-sm-4"></div>
+                <button class="col-sm-1" className="saveButton" onClick={this.handleSave}>Save</button>
+                
+                <button class="col-sm-1" className="cancelButton" onClick={() => this.props.history.push('/posts')}>Cancel</button>
+                </div>
+                </div>
             </>
         )
     }

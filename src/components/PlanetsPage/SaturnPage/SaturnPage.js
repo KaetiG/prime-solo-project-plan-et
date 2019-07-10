@@ -21,7 +21,7 @@ class SaturnPage extends Component {
             <>
                 <div className="planetPageDiv">
                     <h1>Saturn</h1>
-                    <Saturn height='80px' />
+                    <Saturn height='80px' width="80" />
                     <br />
                     <br />
                     <p>Saturn represents restriciton, responsibility, and limitation. It brings structure and promotes self control. 

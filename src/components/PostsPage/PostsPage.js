@@ -37,10 +37,14 @@ class PostsPage extends Component {
 
     render() {
         return (
-            
+
             <div class="container-fluid" className="postPageDiv">
+                
                 <div class="row">
-                    <textarea type="text"
+                    <div class="col-sm-4"></div>
+                    <textarea
+                        class="col-sm-3"
+                        type="text"
                         rows="5"
                         cols="25"
                         onChange={this.handleInputEntry}
@@ -48,33 +52,40 @@ class PostsPage extends Component {
                         key={'entry'}
                         placeholder='My goals for this week are...'>
                     </textarea>
-                    <button 
-                    id="postButton" 
-                    onClick={this.handlePost}>
-                        <PostIcon height="25px" />
+                    <button
+                        class="col-sm-1"
+                        id="postButton"
+                        onClick={this.handlePost}
+                    >
+                        <PostIcon height="25px" width="25px" />
                         <br /> Post</button>
                 </div>
+                <br />
                 <div>
-                    {this.props.postReducer.map((post) => <div class="row" key={post.id}>
-                        <p>{post.date_posted.substring(5, 7) + "/" + post.date_posted.substring(8, 10) + "/" + post.date_posted.substring(0, 4)}
-                            <br />{post.entry}</p><br />
-                            <button
-                                onClick={this.handleEdit}
-                                value={post.id}
-                                className="editButton">
-                                <EditIcon height="25px" width="25px" />
-                            </button>
+                    {this.props.postReducer.map((post) => <div class="row"  className="postHistoryDiv" key={post.id}>
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-3">
+                            <blockquote class="blockquote">
+                                <footer class="blockquote-footer">{post.date_posted.substring(5, 7) + "/" + post.date_posted.substring(8, 10) + "/" + post.date_posted.substring(0, 4)}
+                                </footer>
+                                <p>{post.entry}</p></blockquote></div><br />
+                        <div class="col-sm-1"><button
+                            onClick={this.handleEdit}
+                            value={post.id}
+                            className="editButton">
+                            <EditIcon height="25px" width="25px" />
+                        </button>
                             <button
                                 onClick={this.handleDelete}
                                 value={post.id}
                                 className="deleteButton">
                                 <DeleteIcon height="25px" />
-                            </button>
-                        </div>)}
+                            </button></div>
+                    </div>)}
                     {/* change how this displays */}
                 </div>
             </div>
-            
+
         )
     }
 }

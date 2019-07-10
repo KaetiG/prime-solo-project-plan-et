@@ -21,7 +21,7 @@ class SunPage extends Component {
             <>
                 <div className="planetPageDiv">
                     <h1>Sun</h1>
-                    <Sun height='80px' />
+                    <Sun height='80px' width="80" />
                     <br />
                     <br />
                     <p>The Sun represents your main outward personality.

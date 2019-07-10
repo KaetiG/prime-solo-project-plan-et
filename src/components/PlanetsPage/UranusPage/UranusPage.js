@@ -21,7 +21,7 @@ class UranusPage extends Component {
             <>
                 <div className="planetPageDiv">
                     <h1>Uranus</h1>
-                    <Uranus height='80px' />
+                    <Uranus height='80px' width="80" />
                     <br />
                     <br />
                     <p>Uranus info

@@ -1,6 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
+    background-color: rgb(236, 236, 236);
 }
 
 .alert {
@@ -18,6 +19,14 @@ form {
 input {
     margin: 5px;
     margin-bottom: 10px;
+}
+
+textarea {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 3px;
+    border: solid 1px;
+    border-color: rgb(226, 226, 226);
 }
 
 .log-in, .log-out, .register {
@@ -46,12 +55,21 @@ input {
     cursor: pointer;
 }
 
-postPageDiv {
+.postPageDiv {
     text-align: center;
+    padding: 15px;
+}
+
+.postHistoryDiv {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
 }
 
 .planetPageDiv {
     text-align: center;
+    padding: 15px;
 }
 
 .natalTransitDiv {
@@ -60,6 +78,7 @@ postPageDiv {
 
 .profileDiv {
     text-align: center;
+    padding: 15px;
 }
 
 #dropdown-basic-button {
@@ -73,13 +92,48 @@ postPageDiv {
     outline: none;
 }
 
-.editButton {
-    background-color: #790fcf;
-    color: white;
+#postButton {
+    text-align: center;
+    background-color:rgb(130, 159, 240);
+    margin-left: 15px;
+    margin-right: 15px; 
+    border-radius: 10px;
 }
 
 .deleteButton {
     background-color: #acacac;
+    text-align: right;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.editButton {
+    background-color: #b876ee;
+    color: white;
+    text-align: right;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.cancelButton {
+    background-color: #acacac;
+    text-align: center;
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.saveButton {
+    background-color: #b876ee;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 

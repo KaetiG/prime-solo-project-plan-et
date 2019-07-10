@@ -30,37 +30,37 @@ class ProfilePage extends Component {
           </h1>
       <div>
             {this.props.natalReducer.map((description) => <div key={description.id}>
-            <Sun height='80px'/> 
+            <Sun height='80px' width="80"/> 
               <h3>Sun</h3>
               <p>{description.description_sun}</p>
-              <Moon height='80px'/>
+              <Moon height='80px' width="80"/>
               <h3>Moon</h3>
               <p>{description.description_moon}</p>
-              <Rising height='80px'/>
+              <Rising height='80px' width="80"/>
               <h3>Ascendent/Rising</h3>
               <p>{description.description_asc}</p>
-              <Mercury height='80px'/>
+              <Mercury height='80px' width="80"/>
               <h3>Mercury</h3>
               <p>{description.description_mercury}</p>
-              <Venus height='80px'/>
+              <Venus height='80px' width="80"/>
               <h3>Venus</h3>
               <p>{description.description_venus}</p>
-              <Mars height='80px'/>
+              <Mars height='80px' width="80"/>
               <h3>Mars</h3>
               <p>{description.description_mars}</p>
-              <Jupiter height='80px'/>
+              <Jupiter height='80px' width="80"/>
               <h3>Jupiter</h3>
               <p>{description.description_jupiter}</p>
-              <Saturn height='80px'/>
+              <Saturn height='80px' width="80"/>
               <h3>Saturn</h3>
               <p>{description.description_saturn}</p>
-              <Neptune height='80px'/>
+              <Neptune height='80px' width="80"/>
               <h3>Neptune</h3>
               <p>{description.description_neptune}</p>
-              <Uranus height='80px'/>
+              <Uranus height='80px' width="80"/>
               <h3>Uranus</h3>
               <p>{description.description_uranus}</p>
-              <Pluto height='80px'/>
+              <Pluto height='80px' width="80"/>
               <h3>Pluto</h3>
               <p>{description.description_pluto}</p>
               

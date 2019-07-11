@@ -25,9 +25,9 @@ class ProfilePage extends Component {
   render() {
     return (
       <div className="profileDiv">
-        <h1 id="welcome">
+        <h2 id="welcome">
           Welcome, {this.props.user.username}!
-          </h1>
+          </h2><br />
       <div>
             {this.props.natalReducer.map((description) => <div key={description.id}>
             <Sun height='80px' width="80"/> 

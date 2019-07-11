@@ -20,9 +20,17 @@ class PostsPage extends Component {
     }
 
     handlePost = () => {
-        //const payload = [this.props.user.id, this.state.entry]
+        if(this.state.entry){
         this.props.dispatch({ type: 'POST_ENTRY', payload: { id: this.props.user.id, ...this.state } })
+        
+            this.setState({
+                entry: ''
+            })
+        
         console.log(this.props.user.id, this.state.entry);
+        }else{
+            alert('Please type what you would like to be mindful of or what you would like to set as a goal')
+        }
     }
 
     handleDelete = (id) => {

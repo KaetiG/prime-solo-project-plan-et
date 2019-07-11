@@ -9,13 +9,21 @@
 .nav {
   text-align: center;
   overflow: hidden;
-  background-color: #790fcf;
+  outline: none;
+  border: none;
+  background: #8E2DE2;  
+  background: -webkit-linear-gradient(to bottom, #8E2DE2, #4A00E0);  
+  background: linear-gradient(to bottom, #8E2DE2, #4A00E0); 
+
 }
 
 .nav-link {
   text-align: center;
   color: #f2f2f2;
-  background-color: #790fcf;
+  background: #8E2DE2;  
+  background: -webkit-linear-gradient(to bottom, #8E2DE2, #4A00E0); 
+  background: linear-gradient(to bottom, #8E2DE2, #4A00E0); 
+
   padding: 24px 10px;
   text-decoration: none;
   font-size: 15px;

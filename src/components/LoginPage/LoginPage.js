@@ -31,7 +31,7 @@ class LoginPage extends Component {
 
   render() {
     return (
-      <div>
+      <div className="loginDiv">
         {this.props.errors.loginMessage && (
           <h2
             className="alert"
@@ -41,45 +41,49 @@ class LoginPage extends Component {
           </h2>
         )}
         <form onSubmit={this.login}>
-          <h1>Login</h1>
-          <div>
-            <label htmlFor="username">
-              Username:
+          <h1>Planit</h1>
+          <br />
+          <div className="inputDiv">
               <input
                 type="text"
                 name="username"
+                placeholder="username"
                 value={this.state.username}
                 onChange={this.handleInputChangeFor('username')}
               />
-            </label>
           </div>
-          <div>
-            <label htmlFor="password">
-              Password:
+          <div className="inputDiv">
               <input
                 type="password"
                 name="password"
+                placeholder="password"
                 value={this.state.password}
                 onChange={this.handleInputChangeFor('password')}
               />
-            </label>
           </div>
           <div>
-            <input
-              className="log-in"
-              type="submit"
-              name="submit"
-              value="Log In"
-            />
+            <button
+            className="log-in"
+            type="submit"
+            name="submit"
+            value="Log In">
+            Log In
+            </button>
           </div>
         </form>
+        <br />
+        <br />
+        <p className="loginRegText">
+          Not yet registered?
+        </p>
         <center>
           <button
-            type="button"
-            className="link-button"
+            // type="button"
+            className="register"
             onClick={() => {this.props.dispatch({type: 'SET_TO_REGISTER_MODE'})}}
+          
           >
-            Register
+            Create New Account
           </button>
         </center>
       </div>

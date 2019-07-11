@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 class RegisterPage extends Component {
@@ -78,10 +79,14 @@ class RegisterPage extends Component {
           </h2>
         )}
         <form onSubmit={this.registerUser}>
-          <h1>Register User</h1>
+          <h1>Register</h1>
+          <p>To register for Planit, you will need your birth chart information.
+            <br />
+            You can find this information for free on websites like <Link to="https://astro.cafeastrology.com/natal.php">astro.cafeastrology</Link> or <Link to="https://www.costarastrology.com/natal-chart/">Co-Star</Link>
+          </p>
           <div>
             <label htmlFor="username">
-              Username:
+              Username<br />
               <input
                 type="text"
                 name="username"
@@ -92,7 +97,7 @@ class RegisterPage extends Component {
           </div>
           <div>
             <label htmlFor="password">
-              Password:
+              Password<br />
               <input
                 type="password"
                 name="password"
@@ -102,7 +107,7 @@ class RegisterPage extends Component {
             </label>
           </div>
           {/* INSERT DROP DOWNS HERE */}
-          <div class="form-group">
+          <div class="form-group" className="registerSigns">
             <label htmlFor="selectSun">Sun</label>
             <select class="form-control" name="sun" onChange={this.handleInputChangeFor('sun')} value={this.state.sun}>
               <option value='1'>Aries</option>
@@ -119,7 +124,7 @@ class RegisterPage extends Component {
               <option value='12'>Pisces</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group" className="registerSigns">
             <label htmlFor="selectMoon">Moon</label>
             <select class="form-control" name="moon" onChange={this.handleInputChangeFor('moon')} value={this.state.moon}>
               <option value='1'>Aries</option>
@@ -136,7 +141,7 @@ class RegisterPage extends Component {
               <option value='12'>Pisces</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group" className="registerSigns">
             <label htmlFor="selectAscendent">Ascendent</label>
             <select class="form-control" name="ascendent" onChange={this.handleInputChangeFor('ascendent')} value={this.state.ascendent}>
               <option value='1'>Aries</option>
@@ -153,7 +158,7 @@ class RegisterPage extends Component {
               <option value='12'>Pisces</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group" className="registerSigns">
             <label htmlFor="selectMercury">Mercury</label>
             <select class="form-control" name="mercury" onChange={this.handleInputChangeFor('mercury')} value={this.state.mercury}>
               <option value='1'>Aries</option>
@@ -170,7 +175,7 @@ class RegisterPage extends Component {
               <option value='12'>Pisces</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group" className="registerSigns">
             <label htmlFor="selectVenus">Venus</label>
             <select class="form-control" name="venus" onChange={this.handleInputChangeFor('venus')} value={this.state.venus}>
               <option value='1'>Aries</option>
@@ -187,7 +192,7 @@ class RegisterPage extends Component {
               <option value='12'>Pisces</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group" className="registerSigns">
             <label htmlFor="selectMars">Mars</label>
             <select class="form-control" name="mars" onChange={this.handleInputChangeFor('mars')} value={this.state.mars}>
               <option value='1'>Aries</option>
@@ -204,7 +209,7 @@ class RegisterPage extends Component {
               <option value='12'>Pisces</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group" className="registerSigns">
             <label htmlFor="selectJupiter">Jupiter</label>
             <select class="form-control" name="jupiter" onChange={this.handleInputChangeFor('jupiter')} value={this.state.jupiter}>
               <option value='1'>Aries</option>
@@ -221,7 +226,7 @@ class RegisterPage extends Component {
               <option value='12'>Pisces</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group" className="registerSigns">
             <label htmlFor="selectSaturn">Saturn</label>
             <select class="form-control" name="saturn" onChange={this.handleInputChangeFor('saturn')} value={this.state.saturn}>
               <option value='1'>Aries</option>
@@ -238,7 +243,7 @@ class RegisterPage extends Component {
               <option value='12'>Pisces</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group" className="registerSigns">
             <label htmlFor="selectNeptune">Neptune</label>
             <select class="form-control" name="neptune" onChange={this.handleInputChangeFor('neptune')} value={this.state.neptune}>
               <option value='1'>Aries</option>
@@ -255,7 +260,7 @@ class RegisterPage extends Component {
               <option value='12'>Pisces</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group" className="registerSigns">
             <label htmlFor="selectUranus">Uranus</label>
             <select class="form-control" name="uranus" onChange={this.handleInputChangeFor('uranus')} value={this.state.uranus}>
               <option value='1'>Aries</option>
@@ -272,7 +277,7 @@ class RegisterPage extends Component {
               <option value='12'>Pisces</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group" className="registerSigns">
             <label htmlFor="selectPluto">Pluto</label>
             <select class="form-control" name="pluto" onChange={this.handleInputChangeFor('pluto')} value={this.state.pluto}>
               <option value='1'>Aries</option>
@@ -301,7 +306,7 @@ class RegisterPage extends Component {
         <center>
           <button
             type="button"
-            className="link-button"
+            className="login"
             onClick={() => { this.props.dispatch({ type: 'SET_TO_LOGIN_MODE' }) }}
           >
             Login

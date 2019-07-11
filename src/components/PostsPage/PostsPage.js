@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { ReactComponent as PostIcon } from '../icons/post.svg';
+//import { ReactComponent as PostIcon } from '../icons/post.svg';
 import { ReactComponent as DeleteIcon } from '../icons/delete.svg';
 import { ReactComponent as EditIcon } from '../icons/edit.svg';
 
@@ -25,13 +25,13 @@ class PostsPage extends Component {
         console.log(this.props.user.id, this.state.entry);
     }
 
-    handleDelete = (event) => {
-        this.props.dispatch({ type: "DELETE_POST", payload: { user: this.props.user.id, id: event.target.value } });
-        console.log('delete clicked', event.target.value)
+    handleDelete = (id) => {
+        this.props.dispatch({ type: "DELETE_POST", payload: { user: this.props.user.id, id: id } });
+        console.log('delete clicked', id)
     }
 
-    handleEdit = (event) => {
-        this.props.dispatch({ type: "GET_SINGLE_POST", payload: { id: event.target.value, user: this.props.user.id } })
+    handleEdit = (id) => {
+        this.props.dispatch({ type: "GET_SINGLE_POST", payload: { id: id, user: this.props.user.id } })
         this.props.history.push('/edit')
     }
 
@@ -57,8 +57,9 @@ class PostsPage extends Component {
                         id="postButton"
                         onClick={this.handlePost}
                     >
-                        <PostIcon height="25px" width="25px" />
-                        <br /> Post</button>
+                        {/* <PostIcon height="25px" width="25px" /> */}
+                        {/* <br /> */}
+                         Post</button>
                 </div>
                 <br />
                 <div>
@@ -70,16 +71,16 @@ class PostsPage extends Component {
                                 </footer>
                                 <p>{post.entry}</p></blockquote></div><br />
                         <div class="col-sm-1"><button
-                            onClick={this.handleEdit}
+                            onClick={()=> this.handleEdit(post.id)}
                             value={post.id}
                             className="editButton">
                             <EditIcon height="25px" width="25px" />
                         </button>
                             <button
-                                onClick={this.handleDelete}
+                                onClick={()=> this.handleDelete(post.id)}
                                 value={post.id}
                                 className="deleteButton">
-                                <DeleteIcon height="25px" />
+                                <DeleteIcon height="25px" value={post.id} />
                             </button></div>
                     </div>)}
                     {/* change how this displays */}

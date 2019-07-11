@@ -10,49 +10,80 @@ body {
 }
 
 form {
-    width: 30%;
-    margin: 20px auto;
-    padding: 25px;
+    color: white;
+    margin-top: -50%;
+    margin-bottom: -50%;
+    padding-bottom: 60%;
+    padding-top: 50%;
     border-radius: 2px;
+    text-align: center;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+
+option {
+    text-align: right;
 }
 
 input {
-    margin: 5px;
     margin-bottom: 10px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16pt;
+    min-height: 50px;
+    width: 85%;
+}
+
+.registerSigns {
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    padding-left: 95px;
+    padding-right: 95px;
 }
 
 textarea {
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
     border: solid 1px;
     border-color: rgb(226, 226, 226);
 }
 
+.inputDiv {
+    text-align: center;
+}
+
 .log-in, .log-out, .register {
-  background-color: #790fcf;
-  border-radius: 4px;
+  background-color:rgb(50, 89, 196);
+  border-radius: 8px;
+  margin-bottom: 5px;
   color: #f8f8f8;
+  font-size: 16pt;
+  font-weight: bold;
+  font-kerning: auto;
   min-height: 50px;
-  min-width: 100px;
-  outline:0;
+  width: 85%;
+  outline: none;
+  border: none;
   cursor: pointer;
 }
 
-.log-in:hover, .log-out:hover, .register:hover {
-  background-color: #790fcf;
+.loginRegText {
+    color: white;
 }
 
-/* This line makes the "Register" and "Login" buttons look like links */
-.link-button {
-    background:none;
-    color:inherit;
-    border:none;
-    padding:0;
-    font: inherit;
-    outline:0;
-    border-bottom:1px solid #444; 
-    cursor: pointer;
+.loginPageBody {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.loginDiv {
+    padding-top: 50%;
+    text-align: center;
 }
 
 .postPageDiv {
@@ -63,7 +94,7 @@ textarea {
 .postHistoryDiv {
     background-color: rgb(255, 255, 255);
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
     margin-bottom: 15px;
 }
 
@@ -94,10 +125,17 @@ textarea {
 
 #postButton {
     text-align: center;
-    background-color:rgb(130, 159, 240);
+    margin-bottom: -10px;
     margin-left: 15px;
     margin-right: 15px; 
     border-radius: 10px;
+    background-color:rgb(50, 89, 196);
+    border-radius: 8px;
+    color: #f8f8f8;
+    font-size: 16pt;
+    font-weight: bold;
+    font-kerning: auto;
+    min-height: 50px;
 }
 
 .deleteButton {

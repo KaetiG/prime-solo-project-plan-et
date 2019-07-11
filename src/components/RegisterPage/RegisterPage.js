@@ -294,6 +294,7 @@ class RegisterPage extends Component {
               <option value='12'>Pisces</option>
             </select>
           </div>
+          <br />
           <div>
             <input
               className="register"
@@ -303,10 +304,15 @@ class RegisterPage extends Component {
             />
           </div>
         </form>
+        <br />
+        <br />
         <center>
+        <p className="loginRegText">
+          Already a member?
+        </p>
           <button
             type="button"
-            className="login"
+            className="log-in"
             onClick={() => { this.props.dispatch({ type: 'SET_TO_LOGIN_MODE' }) }}
           >
             Login

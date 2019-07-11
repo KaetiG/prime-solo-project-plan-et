@@ -1,6 +1,31 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
+
+import  { ReactComponent as Sun } from '../icons/sun2.svg';
+import  { ReactComponent as Moon } from '../icons/moon.svg';
+import  { ReactComponent as Rising } from '../icons/caret-symbol.svg';
+import  { ReactComponent as Mercury } from '../icons/mercury.svg';
+import  { ReactComponent as Venus } from '../icons/venus.svg';
+import  { ReactComponent as Mars } from '../icons/mars.svg';
+import  { ReactComponent as Jupiter } from '../icons/jupiter.svg';
+import  { ReactComponent as Saturn } from '../icons/saturn-sign.svg';
+import  { ReactComponent as Neptune } from '../icons/neptune.svg';
+import  { ReactComponent as Uranus } from '../icons/uranus-sign.svg';
+import  { ReactComponent as Pluto } from '../icons/pluto.svg';
+
+import { ReactComponent as Aries } from '../icons/aries.svg';
+import { ReactComponent as Taurus } from '../icons/taurus.svg';
+import { ReactComponent as Gemini } from '../icons/gemini.svg';
+import { ReactComponent as Cancer } from '../icons/cancer.svg';
+import { ReactComponent as Leo } from '../icons/leo.svg';
+import { ReactComponent as Virgo } from '../icons/virgo.svg';
+import { ReactComponent as Libra } from '../icons/libra.svg';
+import { ReactComponent as Scorpio } from '../icons/scorpio.svg';
+import { ReactComponent as Sagittarius } from '../icons/sagittarius.svg';
+import { ReactComponent as Capricorn } from '../icons/capricorn.svg';
+import { ReactComponent as Aquarius } from '../icons/aquarius.svg';
+import { ReactComponent as Pisces } from '../icons/pisces.svg';
 
 const planetStyles = `.DayPicker-Day--mars {
     background-color: #FF3333;
@@ -33,7 +58,7 @@ const planetStyles = `.DayPicker-Day--mars {
       outline: none;
   }`;
 
-  const modifiers = {
+const modifiers = {
     sun: new Date(2019, 6, 22),
     newmoon: new Date(2019, 6, 2),
     fullmoon: new Date(2019, 6, 16),
@@ -49,38 +74,223 @@ class Calendar extends Component {
     handleDayClick = (date) => {
         console.log(date)
         console.log(modifiers.newmoon, 'new moon mod')
-        if (new Date(2019, 6, 2) === date){
+        if (new Date(2019, 6, 2) === date) {
             alert('new moon')
         }
-        else if (modifiers.mercury === date){
+        else if (modifiers.mercury === date) {
             alert('mercury enters cancer')
         }
-    }    
-    
+    }
+
     render() {
         return (
             <>
-            <div>
-                <style>{planetStyles}</style>
-                <DayPicker 
-                    modifiers={modifiers}
-                    month={new Date(2019, 6)} 
-                    onDayClick={this.handleDayClick}
-                />
-            </div>
-        
-            <div>
-                <p style={{color: '#E2E2E2'}}>New Moon July 2</p>
-                <p style={{color: '#A6A6A6'}}>Full Moon July 16</p>
-                <p style={{color: '#FF3333'}}>Mars enters Leo July 1</p>
-                <p style={{color: '#FF77DA'}}>Venus enters Cancer July 3</p>
-                <p style={{color: '#0A308F'}}>Mercury Retrograde begins July 7 in Leo</p>
-                <p style={{color: '#00D0F1'}}>Mercury Retrograde enters Cancer July 19</p>
-                <p style={{color: '#FFFD7F'}}>Sun enters Leo July 22</p>
-                <p style={{color: '#FF77DA'}}>Venus enters Leo July 27</p>
-                <p style={{color: '#0A308F'}}>Mercury Retrograde ends July 31</p>
+                <div class="container-fluid">
+                    <center>
+                        <div class="row" className="aspectsDiv">
+                            <br />
+                            <h2>Current Transits</h2>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <Sun height="30px" width="30px" />
+                                        </td>
+                                        <td>
+                                            Sun
+                                        </td>
+                                        <td>
+                                            in
+                                        </td>
+                                        <td>
+                                            Cancer
+                                        </td>
+                                        <td>
+                                            <Cancer height="30px" width="30px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Moon height="30px" width="30px" />
+                                        </td>
+                                        <td>
+                                            Moon (Full)
+                                        </td>
+                                        <td>
+                                            in
+                                        </td>
+                                        <td>
+                                            Capricorn
+                                        </td>
+                                        <td>
+                                            <Capricorn height="30px" width="30px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Mercury height="30px" width="30px" />
+                                        </td>
+                                        <td>
+                                            Mercury(R)
+                                        </td>
+                                        <td>
+                                            in
+                                        </td>
+                                        <td>
+                                            Leo
+                                        </td>
+                                        <td>
+                                            <Leo height="30px" width="30px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Venus height="30px" width="30px" />  
+                                        </td>
+                                        <td>
+                                            Venus
+                                        </td>
+                                        <td>
+                                            in
+                                        </td>
+                                        <td>
+                                            Cancer
+                                        </td>
+                                        <td>
+                                            <Cancer height="30px" width="30px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Mars height="30px" width="30px" />
+                                        </td>
+                                        <td>
+                                            Mars
+                                        </td>
+                                        <td>
+                                            in
+                                        </td>
+                                        <td>
+                                            Leo
+                                        </td>
+                                        <td>
+                                            <Leo height="30px" width="30px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Jupiter height="30px" width="30px" />
+                                        </td>
+                                        <td>
+                                            Jupiter(R)
+                                        </td>
+                                        <td>
+                                            in
+                                        </td>
+                                        <td>
+                                            Sagittarius
+                                        </td>
+                                        <td>
+                                            <Sagittarius height="30px" width="30px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Saturn height="30px" width="30px" />
+                                        </td>
+                                        <td>
+                                            Saturn(R)
+                                        </td>
+                                        <td>
+                                            in
+                                        </td>
+                                        <td>
+                                            Capricorn
+                                        </td>
+                                        <td>
+                                            <Capricorn height="30px" width="30px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Uranus height="30px" width="30px" />
+                                        </td>
+                                        <td>
+                                            Uranus
+                                        </td>
+                                        <td>
+                                            in
+                                        </td>
+                                        <td>
+                                            Taurus
+                                        </td>
+                                        <td>
+                                            <Taurus height="30px" width="30px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Neptune height="30px" width="30px" />
+                                        </td>
+                                        <td>
+                                            Neptune(R)
+                                        </td>
+                                        <td>
+                                            in
+                                        </td>
+                                        <td>
+                                            Pisces
+                                        </td>
+                                        <td>
+                                            <Pisces height="30px" width="30px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Pluto height="30px" width="30px" />
+                                        </td>
+                                        <td>
+                                            Pluto(R)
+                                        </td>
+                                        <td>
+                                            in
+                                        </td>
+                                        <td>
+                                            Capricorn
+                                        </td>
+                                        <td>
+                                            <Capricorn height="30px" width="30px" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br />
+                        <div class="row" className="calendarDiv">
+                            <h2>Calendar</h2>
+                            <style>{planetStyles}</style>
+                            <DayPicker
+                                modifiers={modifiers}
+                                month={new Date(2019, 6)}
+                                onDayClick={this.handleDayClick}
 
-            </div>
+                            />
+                        </div>
+
+                        <div className="calKey">
+                            <p style={{ color: '#E2E2E2' }}>New Moon July 2</p>
+                            <p style={{ color: '#A6A6A6' }}>Full Moon July 16</p>
+                            <p style={{ color: '#FF3333' }}>Mars enters Leo July 1</p>
+                            <p style={{ color: '#FF77DA' }}>Venus enters Cancer July 3</p>
+                            <p style={{ color: '#0A308F' }}>Mercury Retrograde begins July 7 in Leo</p>
+                            <p style={{ color: '#00D0F1' }}>Mercury Retrograde enters Cancer July 19</p>
+                            <p style={{ color: '#FFFD7F' }}>Sun enters Leo July 22</p>
+                            <p style={{ color: '#FF77DA' }}>Venus enters Leo July 27</p>
+                            <p style={{ color: '#0A308F' }}>Mercury Retrograde ends July 31</p>
+
+                        </div>
+                    </center>
+                </div>
             </>
         );
     }

@@ -4,7 +4,6 @@ import 'react-day-picker/lib/style.css';
 
 import  { ReactComponent as Sun } from '../icons/sun2.svg';
 import  { ReactComponent as Moon } from '../icons/moon.svg';
-import  { ReactComponent as Rising } from '../icons/caret-symbol.svg';
 import  { ReactComponent as Mercury } from '../icons/mercury.svg';
 import  { ReactComponent as Venus } from '../icons/venus.svg';
 import  { ReactComponent as Mars } from '../icons/mars.svg';
@@ -14,17 +13,11 @@ import  { ReactComponent as Neptune } from '../icons/neptune.svg';
 import  { ReactComponent as Uranus } from '../icons/uranus-sign.svg';
 import  { ReactComponent as Pluto } from '../icons/pluto.svg';
 
-import { ReactComponent as Aries } from '../icons/aries.svg';
 import { ReactComponent as Taurus } from '../icons/taurus.svg';
-import { ReactComponent as Gemini } from '../icons/gemini.svg';
 import { ReactComponent as Cancer } from '../icons/cancer.svg';
 import { ReactComponent as Leo } from '../icons/leo.svg';
-import { ReactComponent as Virgo } from '../icons/virgo.svg';
-import { ReactComponent as Libra } from '../icons/libra.svg';
-import { ReactComponent as Scorpio } from '../icons/scorpio.svg';
 import { ReactComponent as Sagittarius } from '../icons/sagittarius.svg';
 import { ReactComponent as Capricorn } from '../icons/capricorn.svg';
-import { ReactComponent as Aquarius } from '../icons/aquarius.svg';
 import { ReactComponent as Pisces } from '../icons/pisces.svg';
 
 const planetStyles = `.DayPicker-Day--mars {

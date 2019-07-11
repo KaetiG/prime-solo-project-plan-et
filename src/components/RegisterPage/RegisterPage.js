@@ -7,17 +7,17 @@ class RegisterPage extends Component {
   state = {
     username: '',
     password: '',
-    sun: '',
-    moon: '',
-    ascendent: '',
-    mercury: '',
-    venus: '',
-    mars: '',
-    jupiter: '',
-    saturn: '',
-    neptune: '',
-    uranus: '',
-    pluto: ''
+    sun: '1',
+    moon: '1',
+    ascendent: '1',
+    mercury: '1',
+    venus: '1',
+    mars: '1',
+    jupiter: '1',
+    saturn: '1',
+    neptune: '1',
+    uranus: '1',
+    pluto: '1'
 
   };
 

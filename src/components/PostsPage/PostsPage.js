@@ -80,7 +80,7 @@ class PostsPage extends Component {
                                 onClick={()=> this.handleDelete(post.id)}
                                 value={post.id}
                                 className="deleteButton">
-                                <DeleteIcon height="25px" value={post.id} />
+                                <DeleteIcon className="deleteIcon" height="25px" value={post.id} />
                             </button></div>
                     </div>)}
                     {/* change how this displays */}

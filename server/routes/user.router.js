@@ -54,7 +54,7 @@ router.post('/logout', (req, res) => {
 
 //-----------POSTS PAGE'S CRUD ROUTES-------------//
 //----NEW POSTS----//
-router.post('/posts', (req, res) => {
+router.post('/posts', rejectUnauthenticated, (req, res) => {
 const id = req.body.id
 const entry = req.body.entry
 
@@ -77,7 +77,7 @@ ORDER BY "date_posted" DESC;`
   });
 })
 //-------DELETE POST----------//
-router.delete('/posts/:id', (req, res) => {
+router.delete('/posts/:id', rejectUnauthenticated, (req, res) => {
   const queryText = 'DELETE FROM "posts" WHERE id=$1';
   pool.query(queryText, [req.params.id])
     .then(() => { res.sendStatus(200); })
@@ -86,7 +86,7 @@ router.delete('/posts/:id', (req, res) => {
       res.sendStatus(500);
     });
 });
-router.get('/singlepost/:id', (req, res) => {
+router.get('/singlepost/:id', rejectUnauthenticated, (req, res) => {
   console.log('router is hit', req.params.id, req.user.id)
   const queryText = `SELECT "posts"."id", "posts"."entry" FROM "posts"
   JOIN "user" ON "user"."id"="posts"."user_id"
@@ -99,7 +99,7 @@ router.get('/singlepost/:id', (req, res) => {
     });
 });
 //---------UPDATE POST----------//
-router.put('/posts/:id', (req, res) =>{
+router.put('/posts/:id', rejectUnauthenticated, (req, res) =>{
   const queryText = `UPDATE "posts"
   SET "entry" = $1
   WHERE "id" = $2;`
@@ -113,7 +113,7 @@ router.put('/posts/:id', (req, res) =>{
 })
 //--------PROFILE ROUTES---------//
 
-router.get('/natalchart/', (req, res) => {
+router.get('/natalchart/', rejectUnauthenticated, (req, res) => {
   const poolQuery = `SELECT "sun"."description_sun", 
   "moon"."description_moon", 
   "ascendent"."description_asc", 

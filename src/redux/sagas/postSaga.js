@@ -4,6 +4,7 @@ import axios from 'axios';
 function* getPost(action) {
     try {
     const getResponse = yield axios.get('/api/user/posts/' + action.payload);
+        yield put({type: 'CLEAR_POSTS'});
         yield put({ type: 'SET_POSTS', payload: getResponse.data })
       } catch(error) {
         console.log('error posting entry', error);

@@ -11,18 +11,20 @@
   overflow: hidden;
   outline: none;
   border: none;
-  background: #8E2DE2;  
-  background: -webkit-linear-gradient(to bottom, #8E2DE2, #4A00E0);  
-  background: linear-gradient(to bottom, #8E2DE2, #4A00E0); 
+  background: #C33764;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
 
 }
 
 .nav-link {
   text-align: center;
   color: #f2f2f2;
-  background: #8E2DE2;  
-  background: -webkit-linear-gradient(to bottom, #8E2DE2, #4A00E0); 
-  background: linear-gradient(to bottom, #8E2DE2, #4A00E0); 
+  background: #C33764;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 
   padding: 24px 10px;
   text-decoration: none;
@@ -36,7 +38,7 @@
 }
 
 .nav-link:hover {
-  background-color: #790fcf;
+  background-color: #1D2671;
 }
 
 .nav-right {

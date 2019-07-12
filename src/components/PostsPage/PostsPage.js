@@ -51,7 +51,7 @@ class PostsPage extends Component {
                 <div class="row">
                     <div class="col-sm-4"></div>
                     <textarea
-                        class="col-sm-3"
+                        class="col-sm-4"
                         type="text"
                         rows="5"
                         cols="25"
@@ -60,8 +60,11 @@ class PostsPage extends Component {
                         key={'entry'}
                         placeholder='My goals for this week are...'>
                     </textarea>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-4"></div>
                     <button
-                        class="col-sm-1"
+                        class="col-sm-4"
                         id="postButton"
                         onClick={this.handlePost}
                     >
@@ -82,13 +85,13 @@ class PostsPage extends Component {
                             onClick={()=> this.handleEdit(post.id)}
                             value={post.id}
                             className="editButton">
-                            <EditIcon height="25px" width="25px" />
+                            <EditIcon className="iconFill" height="25px" width="25px" />
                         </button>
                             <button
                                 onClick={()=> this.handleDelete(post.id)}
                                 value={post.id}
                                 className="deleteButton">
-                                <DeleteIcon className="deleteIcon" height="25px" value={post.id} />
+                                <DeleteIcon className="iconFill" height="25px" value={post.id} />
                             </button></div>
                     </div>)}
                     {/* change how this displays */}

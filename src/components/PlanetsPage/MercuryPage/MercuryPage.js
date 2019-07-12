@@ -41,12 +41,12 @@ class MercuryPage extends Component {
                     </DropdownButton>
                     <br />
                     <BootstrapSwitchButton
-                        id="natalTransitToggle"
+                        className="natalTransitToggle"
                         checked={false}
                         onlabel='Transit'
                         offlabel='Natal'
-                        onstyle="info"
-                        offstyle="info"
+                        onstyle="secondary"
+                        offstyle="secondary"
                         width={100}
                         onChange={(checked: boolean) => {
                             this.setState({ isNatalActive: checked })

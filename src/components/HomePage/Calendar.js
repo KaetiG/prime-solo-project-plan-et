@@ -52,22 +52,22 @@ const planetStyles = `.DayPicker-Day--mars {
   }`;
 
 const modifiers = {
-    sun: new Date(2019, 6, 22),
-    newmoon: new Date(2019, 6, 2),
-    fullmoon: new Date(2019, 6, 16),
-    mars: new Date(2019, 6, 1),
-    mercury: new Date(2019, 6, 19),
-    venus: new Date(2019, 6, 3),
-    venus2: new Date(2019, 6, 27),
-    mercuryRetrograde: new Date(2019, 6, 7),
-    mercuryDirect: new Date(2019, 6, 31)
+    sun: new Date(2019, 6, 22, 12, 0, 0),
+    newmoon: new Date(2019, 6, 2, 12, 0, 0),
+    fullmoon: new Date(2019, 6, 16, 12, 0, 0),
+    mars: new Date(2019, 6, 1, 12, 0, 0),
+    mercury: new Date(2019, 6, 19, 12, 0, 0),
+    venus: new Date(2019, 6, 3, 12, 0, 0),
+    venus2: new Date(2019, 6, 27, 12, 0, 0),
+    mercuryRetrograde: new Date(2019, 6, 7, 12, 0, 0),
+    mercuryDirect: new Date(2019, 6, 31, 12, 0, 0)
 };
 
 class Calendar extends Component {
     handleDayClick = (date) => {
         console.log(date)
         console.log(modifiers.newmoon, 'new moon mod')
-        if (new Date(2019, 6, 2) === date) {
+        if (new Date(2019, 6, 2, 12, 0, 0) === date) {
             alert('new moon')
         }
         else if (modifiers.mercury === date) {

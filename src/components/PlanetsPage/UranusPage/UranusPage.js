@@ -44,8 +44,8 @@ class UranusPage extends Component {
                         checked={false}
                         onlabel='Transit'
                         offlabel='Natal'
-                        onstyle="info"
-                        offstyle="info"
+                        onstyle="secondary"
+                        offstyle="secondary"
                         width={100}
                         onChange={(checked: boolean) => {
                             this.setState({ isNatalActive: checked })

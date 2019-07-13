@@ -23,6 +23,10 @@ form {
 
 }
 
+.logoutButton {
+    color: white;
+}
+
 option {
     text-align: right;
 }

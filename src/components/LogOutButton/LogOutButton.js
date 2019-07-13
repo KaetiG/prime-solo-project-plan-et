@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const LogOutButton = props => (
   <button
@@ -9,7 +10,9 @@ const LogOutButton = props => (
     className={props.className}
     onClick={() => props.dispatch({ type: 'LOGOUT' })}
   >
-    Log Out
+    <Link className="logoutButton" to="/home">
+      Log Out
+      </Link>
   </button>
 );
 

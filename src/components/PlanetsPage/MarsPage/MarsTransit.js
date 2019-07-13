@@ -60,16 +60,25 @@ class MarsTransit extends Component {
                         We are drawn to problems, and find them exciting emotionally. </p>
                     <Sagittarius height='80px' />
                     <h4>Sagittarius</h4>
-                    <p></p>
+                    <p>Ideals drive our actions during Mars' transit through Sagittarius. 
+                        We are overcome with wanderlust, and become restless if we start to feel trapped.
+                        If we start a new project, we start it with plenty of excitement and motivation, but it may be abandoned some time later. </p>
                     <Capricorn height='80px' />
                     <h4>Capricorn</h4>
-                    <p></p>
+                    <p>Persistance and reliability are common themes during Capricorn Mars transits. 
+                        It may take a while for us to be angered, but when it happens it is met with a rather cold frustration. 
+                        Our actions are carefully thought out during this time. Possible consequences and consideration for the future drive those actions. 
+                    </p>
                     <Aquarius height='80px' />
                     <h4>Aquarius</h4>
-                    <p></p>
+                    <p>During Mars in Aquarius, our actions are approached from an intellectual and emotionally detatched mindset. 
+                        When frustrated, it is usually an impersonal expression. 
+                        Energy levels are erratic but that makes for some dynamic cooperative problem solving.  </p>
                     <Pisces height='80px' />
                     <h4>Pisces</h4>
-                    <p></p>
+                    <p>Pisces Mars transits bring out some people pleasing tendancies. We are more inclined to put others' needs ahead of our own.
+                        We strive towards more emotional or spiritual goals than traditional ones. Our energy levels are constantly fluctuating during this time.
+                    </p>
                 </div>
             </>
         )

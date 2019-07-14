@@ -29,11 +29,15 @@ router.post('/register', (req, res, next) => {
   const uranus = req.body.uranus;
   const pluto = req.body.pluto;
 
-  const queryText = `INSERT INTO "user" ("username", "password", "sun", "moon", "ascendent", "mercury", "venus", "mars", "jupiter", "saturn", "neptune", "uranus", "pluto") 
+  const queryText1 = `INSERT INTO "user" ("username", "password", "sun", "moon", "ascendent", "mercury", "venus", "mars", "jupiter", "saturn", "neptune", "uranus", "pluto") 
   VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) 
-  RETURNING id`;
-  pool.query(queryText, [username, password, sun, moon, ascendent, mercury, venus, mars, jupiter, saturn, neptune, uranus, pluto])
-    .then(() => res.sendStatus(201))
+  RETURNING id`
+
+ const queryText2 = `INSERT INTO "profile" ("sun_id", "moon_id", "ascendent_id", "mercury_id", "venus_id", "mars_id", "jupiter_id", "saturn_id", "neptune_id", "uranus_id", "pluto_id")
+ VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11);`
+pool.query(queryText1, [username, password, sun, moon, ascendent, mercury, venus, mars, jupiter, saturn, neptune, uranus, pluto])
+pool.query(queryText2, [sun, moon, ascendent, mercury, venus, mars, jupiter, saturn, neptune, uranus, pluto])
+  .then(() => res.sendStatus(201))
     .catch(() => res.sendStatus(500));
 });
 
@@ -125,7 +129,7 @@ router.get('/natalchart/', rejectUnauthenticated, (req, res) => {
   "neptune"."description_neptune", 
   "uranus"."description_uranus", 
   "pluto"."description_pluto" FROM "profile"
-  JOIN "user" ON "user"."id"="profile"."user_id"
+  JOIN "user" ON "user"."id"="profile"."id"
   JOIN "sun" ON "sun"."id"="profile"."sun_id"
   JOIN "moon" ON "moon"."id"="profile"."moon_id"
   JOIN "ascendent" ON "ascendent"."id"="profile"."ascendent_id"

@@ -70,6 +70,8 @@ class RegisterPage extends Component {
   render() {
     return (
       <div>
+        <br/>
+        <br/>
         {this.props.errors.registrationMessage && (
           <h2
             className="alert"
@@ -82,7 +84,7 @@ class RegisterPage extends Component {
           <h1>Register</h1>
           <p>To register for Planit, you will need your birth chart information.
             <br />
-            You can find this information for free on websites like <Link to="https://astro.cafeastrology.com/natal.php">astro.cafeastrology</Link> or <Link to="https://www.costarastrology.com/natal-chart/">Co-Star</Link>
+            You can find this information for free on websites like <Link className="regLinkRef" to="https://astro.cafeastrology.com/natal.php">astro.cafeastrology</Link> or <Link className="regLinkRef" to="https://www.costarastrology.com/natal-chart/">Co-Star</Link>
           </p>
           <div>
             <label htmlFor="username">

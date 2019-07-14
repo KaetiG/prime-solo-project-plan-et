@@ -3,6 +3,13 @@ import { connect } from 'react-redux';
 import './Nav.css';
 import { stack as Menu } from 'react-burger-menu';
 
+import { ReactComponent as PostIcon } from '../icons/post.svg';
+import { ReactComponent as UserIcon } from '../icons/user.svg';
+import { ReactComponent as PlanetsIcon } from '../icons/solar-system.svg';
+import { ReactComponent as MoonIcon } from '../icons/moon.svg';
+
+
+
 const Nav = (props) => (
   
     <div className="nav">
@@ -10,24 +17,24 @@ const Nav = (props) => (
       {props.user.id && (
         <>
         <Menu>
-        <a className="menu-item" href="/">
+        <a className="menu-item" href="#/home">
           Home
         </a>
         <br />
         <a className="menu-item" href="#/profile">
-          Profile
+        <UserIcon width="25px" height="25px" className="iconFill" />  Profile
         </a>
         <br />
         <a className="menu-item" href="#/moon">
-          Moon
+        <MoonIcon width="25px" height="25px" className="iconFill" />  Moon
         </a>
         <br />
         <a className="menu-item" href="#/planets/sun">
-          Planets
+        <PlanetsIcon width="25px" height="25px" className="iconFill" />  Planets
         </a>
         <br />
         <a className="menu-item" href="#/posts">
-          Posts
+        <PostIcon width="25px" height="25px" className="iconFill" />  Posts
         </a>
         </Menu>
         </>

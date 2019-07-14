@@ -25,9 +25,15 @@ form {
 .logoutButton {
     color: white;
 }
-
+.regLinkRef{
+    color:rgb(230, 104, 144);
+}
 option {
     text-align: right;
+}
+
+.dropDownItem:hover {
+    background-color: gray;
 }
 
 label {
@@ -150,6 +156,7 @@ table {
     background-color: #7366a3;
     border: none;
     outline-color: gray;
+    font-size: 18pt;
 }
 
 .natalTransitToggle {

@@ -90,5 +90,11 @@
 .menu-item {
   outline: none;
   color: white;
-  font-size: 16pt;
+  font-size: 22pt;
 }
+
+.menu-item:link, .menu-item:visited, .menu-item:active {
+color: white;
+text-decoration: none;
+}
+

@@ -49,6 +49,9 @@ p {
     padding-right: 15px;
 }
 
+td {
+    padding-bottom: 5px;
+}
 .registerSigns {
     padding-bottom: 10px;
     min-height: 50px;

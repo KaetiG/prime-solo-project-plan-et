@@ -24,7 +24,8 @@ class VenusPage extends Component {
                     <Venus height='80px' />
                     <br />
                     <br />
-                    <p>Venus info
+                    <p>Venus represents how we show our affection as well as how we would like to receive it. Venus rules both Taurus and Libra
+                         as well as the Second and Seventh Houses.  
                     </p>
                     <br />
                     <DropdownButton id="dropdown-basic-button" title="Dropdown button">

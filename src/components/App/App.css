@@ -13,7 +13,7 @@ body {
     color: white;
     margin-top: -50%;
     margin-bottom: -50%;
-    padding-bottom: 60%;
+    padding-bottom: 80%;
     /* padding-top: 45%; */
     border-radius: 2px;
     text-align: center;
@@ -236,6 +236,7 @@ table {
 
 .transitBlockQuote {
     font-size: 12pt;
+    padding: 15px;
 }
 
 .logoFill {

@@ -490,8 +490,7 @@ INSERT INTO "pluto" ("sign", "description")
 VALUES ('Pisces', 'This placement may tend to constantly worry whether or not their decisions effect others negatively. They can be inspiring people, and may feel misunderstood sometimes.');
 
 CREATE TABLE "profile" (
-"id" SERIAL PRIMARY KEY,
-"user_id" INT REFERENCES "user" NOT NULL,
+"id" SERIAL PRIMARY KEY REFERENCES "user",
 "sun_id" INT REFERENCES "sun" NOT NULL,
 "moon_id" INT REFERENCES "moon" NOT NULL,
 "ascendent_id" INT REFERENCES "ascendent" NOT NULL,
@@ -504,6 +503,3 @@ CREATE TABLE "profile" (
 "uranus_id" INT REFERENCES "uranus" NOT NULL,
 "pluto_id" INT REFERENCES "pluto" NOT NULL
 );
-
-INSERT INTO "profile" ("user_id", "sun_id", "moon_id", "ascendent_id", "mercury_id", "venus_id", "mars_id", "jupiter_id", "saturn_id", "neptune_id", "uranus_id", "pluto_id")
-VALUES (1, 10, 6, 10, 9, 8, 9, 6, 11, 10, 10, 8);

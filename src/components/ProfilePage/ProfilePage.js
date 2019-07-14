@@ -15,6 +15,8 @@ import  { ReactComponent as Uranus } from '../icons/uranus-sign.svg';
 import  { ReactComponent as Pluto } from '../icons/pluto.svg';
 
 
+
+
 // this could also be written with destructuring parameters as:
 // const UserPage = ({ user }) => (
 // and then instead of `props.user.username` you could use `user.username`

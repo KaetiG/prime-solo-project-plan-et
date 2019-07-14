@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { ReactComponent as Planit } from '../icons/planit_logo.svg';
 
 class LoginPage extends Component {
   state = {
@@ -40,9 +41,8 @@ class LoginPage extends Component {
             {this.props.errors.loginMessage}
           </h2>
         )}
-        <form onSubmit={this.login}>
-          <h1>Planit</h1>
-          <br />
+        <form className="loginForm" onSubmit={this.login}>
+          <h1><Planit className="logoFill" width="250px"  /></h1>
           <div className="inputDiv">
               <input
                 type="text"

@@ -80,7 +80,7 @@ class RegisterPage extends Component {
             {this.props.errors.registrationMessage}
           </h2>
         )}
-        <form onSubmit={this.registerUser}>
+        <form className="registerForm" onSubmit={this.registerUser}>
           <h1>Register</h1>
           <p>To register for Planit, you will need your birth chart information.
             <br />

@@ -9,7 +9,20 @@ body {
     margin: 50px;
 }
 
-form {
+.loginForm {
+    color: white;
+    margin-top: -50%;
+    margin-bottom: -50%;
+    padding-bottom: 60%;
+    /* padding-top: 45%; */
+    border-radius: 2px;
+    text-align: center;
+    background: #1D2671; 
+    background: -webkit-linear-gradient(to top, #C33764, #1D2671); 
+    background: linear-gradient(to top, #C33764, #1D2671); 
+}
+
+.registerForm {
     color: white;
     margin-top: -50%;
     margin-bottom: -50%;
@@ -225,5 +238,8 @@ table {
     font-size: 12pt;
 }
 
-
-
+.logoFill {
+    fill: white;
+    color: white;
+    padding-right: 20px;
+}

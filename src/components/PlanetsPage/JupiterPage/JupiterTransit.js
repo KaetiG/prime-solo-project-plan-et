@@ -1,17 +1,7 @@
 import React, { Component } from 'react';
 
-import { ReactComponent as Aries } from '../../icons/aries.svg';
-import { ReactComponent as Taurus } from '../../icons/taurus.svg';
-import { ReactComponent as Gemini } from '../../icons/gemini.svg';
-import { ReactComponent as Cancer } from '../../icons/cancer.svg';
-import { ReactComponent as Leo } from '../../icons/leo.svg';
-import { ReactComponent as Virgo } from '../../icons/virgo.svg';
-import { ReactComponent as Libra } from '../../icons/libra.svg';
-import { ReactComponent as Scorpio } from '../../icons/scorpio.svg';
 import { ReactComponent as Sagittarius } from '../../icons/sagittarius.svg';
-import { ReactComponent as Capricorn } from '../../icons/capricorn.svg';
-import { ReactComponent as Aquarius } from '../../icons/aquarius.svg';
-import { ReactComponent as Pisces } from '../../icons/pisces.svg';
+
 
 class JupiterTransit extends Component {
     render(){
@@ -21,7 +11,7 @@ class JupiterTransit extends Component {
                     
                     <Sagittarius height='80px' />
                     <h4>Sagittarius</h4>
-                    <blockquote class="blockquote">Jupiter is in its home sign of Sagittarius until December 2nd, 2019.<br/>
+                    <blockquote class="blockquote" className="transitBlockQuote">Jupiter is in its home sign of Sagittarius until December 2nd, 2019.<br/>
                     Jupiter’s effects are to expand our experiences, our knowledge, and our understanding. 
                     Jupiter represents optimism, growth, generosity, and abundance. 
                     In Scorpio, Jupiter expanded our awareness of our intimate relationships, personal power, and coping skills. 

@@ -24,7 +24,9 @@ class UranusPage extends Component {
                     <Uranus height='80px' width="80" />
                     <br />
                     <br />
-                    <p>Uranus info
+                    <p>Uranus rules Aquarius and the Eleventh House. It takes roughly 84 years to complete its cycle through the signs. 
+                        While Saturn slows us down, Uranus kicks up the speed and encourages us to try new things. 
+                        It rules discovery, innovation, and invention just to name a few. It is the planet of rebellion. 
                     </p>
                     <br />
                     <DropdownButton id="dropdown-basic-button" title="Dropdown button">

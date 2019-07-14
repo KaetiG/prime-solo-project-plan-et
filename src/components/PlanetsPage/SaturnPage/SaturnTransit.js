@@ -1,59 +1,27 @@
 import React, { Component } from 'react';
 
-import { ReactComponent as Aries } from '../../icons/aries.svg';
-import { ReactComponent as Taurus } from '../../icons/taurus.svg';
-import { ReactComponent as Gemini } from '../../icons/gemini.svg';
-import { ReactComponent as Cancer } from '../../icons/cancer.svg';
-import { ReactComponent as Leo } from '../../icons/leo.svg';
-import { ReactComponent as Virgo } from '../../icons/virgo.svg';
-import { ReactComponent as Libra } from '../../icons/libra.svg';
-import { ReactComponent as Scorpio } from '../../icons/scorpio.svg';
-import { ReactComponent as Sagittarius } from '../../icons/sagittarius.svg';
 import { ReactComponent as Capricorn } from '../../icons/capricorn.svg';
-import { ReactComponent as Aquarius } from '../../icons/aquarius.svg';
-import { ReactComponent as Pisces } from '../../icons/pisces.svg';
+
 
 class SaturnTransit extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <>
-            <div className="natalTransitDiv">
-                    <Aries height='80px' />
-                    <h4>Aries</h4>
-                    <p></p>
-                    <Taurus height='80px' />
-                    <h4>Taurus</h4>
-                    <p></p>
-                    <Gemini height='80px' />
-                    <h4>Gemini</h4>
-                    <p></p>
-                    <Cancer height='80px' />
-                    <h4>Cancer</h4>
-                    <p></p>
-                    <Leo height='80px' />
-                    <h4>Leo</h4>
-                    <p></p>
-                    <Virgo height='80px' />
-                    <h4>Virgo</h4>
-                    <p></p>
-                    <Libra height='80px' />
-                    <h4>Libra</h4>
-                    <p></p>
-                    <Scorpio height='80px' />
-                    <h4>Scorpio</h4>
-                    <p></p>
-                    <Sagittarius height='80px' />
-                    <h4>Sagittarius</h4>
-                    <p></p>
+                <div className="natalTransitDiv">
                     <Capricorn height='80px' />
                     <h4>Capricorn</h4>
-                    <p></p>
-                    <Aquarius height='80px' />
-                    <h4>Aquarius</h4>
-                    <p></p>
-                    <Pisces height='80px' />
-                    <h4>Pisces</h4>
-                    <p></p>
+                    <p>Saturn is in its home sign of Capricorn until March 2019.</p>
+                    <br />
+                    <blockquote class="blockquote" className="transitBlockQuote">The global patriarchy could meet its limits—or press for a takeover. 
+                        Both Saturn and Capricorn rule men, fathers, authority, banks, the economy, government, corporations and big industry. 
+                        These are the areas that will come under scrutiny, as Saturn’s magnifying glass surveys for flaws in the foundation of leadership and large entities.
+                        Saturn returns to Capricorn every 28-30 years, staying for about three years each time. 
+                        Its imprint on history is indelible, tearing down outmoded structures and revealing some of the worst corruptions among world leadership. 
+                        Saturn was last in Capricorn from February 13 to June 9, 1988 and then November 11, 1988 to February 6, 1991.
+                        On a positive note, Saturn in Capricorn could restore order to our out-of-control world by instituting policies that protect human rights—or dismantling laws that oppress us. 
+                        Important regulations could be imposed on big businesses that are polluting our planet, causing climate change and melting polar ice caps. 
+                        Saturn rules harsh lessons and wakeup calls, so here’s hoping that it doesn’t take anything drastic to force our hand.
+                        <footer class="blockquote-footer">Astrostyle.com</footer></blockquote>
                 </div>
             </>
         )

@@ -18,42 +18,13 @@ class NeptuneTransit extends Component {
         return(
             <>
             <div className="natalTransitDiv">
-                    <Aries height='80px' />
-                    <h4>Aries</h4>
-                    <p></p>
-                    <Taurus height='80px' />
-                    <h4>Taurus</h4>
-                    <p></p>
-                    <Gemini height='80px' />
-                    <h4>Gemini</h4>
-                    <p></p>
-                    <Cancer height='80px' />
-                    <h4>Cancer</h4>
-                    <p></p>
-                    <Leo height='80px' />
-                    <h4>Leo</h4>
-                    <p></p>
-                    <Virgo height='80px' />
-                    <h4>Virgo</h4>
-                    <p></p>
-                    <Libra height='80px' />
-                    <h4>Libra</h4>
-                    <p></p>
-                    <Scorpio height='80px' />
-                    <h4>Scorpio</h4>
-                    <p></p>
-                    <Sagittarius height='80px' />
-                    <h4>Sagittarius</h4>
-                    <p></p>
-                    <Capricorn height='80px' />
-                    <h4>Capricorn</h4>
-                    <p></p>
-                    <Aquarius height='80px' />
-                    <h4>Aquarius</h4>
-                    <p></p>
                     <Pisces height='80px' />
                     <h4>Pisces</h4>
-                    <p></p>
+                    <p>Neptune will be in its home sign of Pisces until 2026.<br /> 
+                    This only occurs once every 165 years or so. It is a time for arts, spirtuality, and everything within our subconcious mind.
+                    Mindfulness is the main theme of this transit. 
+                    Connecting to our inner selves and a resurgence of arts will come from Neptune in Pisces. 
+                    </p>
                 </div>
             </>
         )

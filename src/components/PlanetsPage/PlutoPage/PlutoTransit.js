@@ -18,42 +18,12 @@ class PlutoTransit extends Component {
         return(
             <>
             <div className="natalTransitDiv">
-                    <Aries height='80px' />
-                    <h4>Aries</h4>
-                    <p></p>
-                    <Taurus height='80px' />
-                    <h4>Taurus</h4>
-                    <p></p>
-                    <Gemini height='80px' />
-                    <h4>Gemini</h4>
-                    <p></p>
-                    <Cancer height='80px' />
-                    <h4>Cancer</h4>
-                    <p></p>
-                    <Leo height='80px' />
-                    <h4>Leo</h4>
-                    <p></p>
-                    <Virgo height='80px' />
-                    <h4>Virgo</h4>
-                    <p></p>
-                    <Libra height='80px' />
-                    <h4>Libra</h4>
-                    <p></p>
-                    <Scorpio height='80px' />
-                    <h4>Scorpio</h4>
-                    <p></p>
-                    <Sagittarius height='80px' />
-                    <h4>Sagittarius</h4>
-                    <p></p>
                     <Capricorn height='80px' />
                     <h4>Capricorn</h4>
-                    <p></p>
-                    <Aquarius height='80px' />
-                    <h4>Aquarius</h4>
-                    <p></p>
-                    <Pisces height='80px' />
-                    <h4>Pisces</h4>
-                    <p></p>
+                    <p>Pluto will reside in Capricorn until 2024. <br />
+                    Pluto transits help us look within ourselves, and confront what ever darkness is hindering our growth. 
+                    While in Capricorn the focus will be on subjects like status, our sense of security, our material resources, finances, and power.</p>
+                  
                 </div>
             </>
         )

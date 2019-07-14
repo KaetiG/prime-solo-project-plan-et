@@ -1,32 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './Nav.css';
+import { stack as Menu } from 'react-burger-menu';
 
 const Nav = (props) => (
   
     <div className="nav">
-      <Link className="nav-link" to="/home">
-        {/* Show this link if they are logged in or not,
-        but call this link 'Home' if they are logged in,
-        and call this link 'Login / Register' if they are not */}
-        {props.user.id ? 'Home' : ''}
-      </Link>
       {/* Show the link to the info page and the logout button if the user is logged in */}
       {props.user.id && (
         <>
-          <Link className="nav-link" to="/profile">
-            Profile
-          </Link>
-          <Link className="nav-link" to="/moon">
-            Moon
-          </Link>
-          <Link className="nav-link" to="/planets/sun">
-            Planets
-          </Link>
-          <Link className="nav-link" to="/posts">
-            Posts
-          </Link>
+        <Menu>
+        <a className="menu-item" href="/">
+          Home
+        </a>
+        <br />
+        <a className="menu-item" href="#/profile">
+          Profile
+        </a>
+        <br />
+        <a className="menu-item" href="#/moon">
+          Moon
+        </a>
+        <br />
+        <a className="menu-item" href="#/planets/sun">
+          Planets
+        </a>
+        <br />
+        <a className="menu-item" href="#/posts">
+          Posts
+        </a>
+        </Menu>
         </>
       )}
       {/* Always show this link since the about page is not protected */}

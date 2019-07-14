@@ -7,19 +7,18 @@
 }
 
 .nav {
-  text-align: center;
+  text-align: right;
   overflow: hidden;
   outline: none;
   border: none;
   background: #C33764;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   
+  background: -webkit-linear-gradient(to top, #1D2671, #C33764);  
+  background: linear-gradient(to top, #1D2671, #C33764); 
 
 }
 
 .nav-link {
-  text-align: center;
+  text-align: right;
   color: #f2f2f2;
   background: #C33764;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
@@ -43,4 +42,53 @@
 
 .nav-right {
   float: right;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 40px;
+  height: 36px;
+  margin: 15px;
+  outline: none;
+  opacity: .80;
+  /* left: 36px;
+  top: 36px; */
+  /* background-color: white; */
+}
+
+.bm-burger-bars {
+  background: #1D2671;
+  border-radius: 4px;
+}
+
+.bm-menu {
+  text-align: left;
+  background: #1D2671; 
+  background: -webkit-linear-gradient(to top, #C33764, #1D2671); 
+  background: linear-gradient(to top, #C33764, #1D2671); 
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  color: white;
+  outline: none;
+}
+
+.bm-item-list {
+  color: #C33764;
+  padding: 0.8em;
+  outline: none;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: white;
+}
+
+.menu-item {
+  outline: none;
+  color: white;
+  font-size: 16pt;
 }

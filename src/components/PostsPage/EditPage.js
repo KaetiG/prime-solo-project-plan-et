@@ -29,6 +29,8 @@ class EditPage extends Component {
                 
                 <div class="row">
                     <div class="col-sm-4"></div>
+                    <br />
+                    <br />
                     <textarea
                         class="col-sm-3"
                         type="text"

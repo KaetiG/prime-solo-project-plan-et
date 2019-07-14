@@ -17,10 +17,9 @@ form {
     padding-top: 45%;
     border-radius: 2px;
     text-align: center;
-    background: #1D2671;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #C33764, #1D2671);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #C33764, #1D2671); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #1D2671; 
+    background: -webkit-linear-gradient(to top, #C33764, #1D2671); 
+    background: linear-gradient(to top, #C33764, #1D2671); 
 }
 
 .logoutButton {
@@ -43,6 +42,11 @@ input {
     font-size: 16pt;
     min-height: 50px;
     width: 85%;
+}
+
+p {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .registerSigns {
@@ -148,6 +152,7 @@ table {
 .natalTransitToggle {
     border-color: rgb(50, 89, 196);
     outline: none;
+    
 }
 
 #postButton {

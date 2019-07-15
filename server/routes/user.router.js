@@ -29,14 +29,14 @@ router.post('/register', (req, res, next) => {
   const uranus = req.body.uranus;
   const pluto = req.body.pluto;
 
-  const queryText1 = `INSERT INTO "user" ("username", "password", "sun", "moon", "ascendent", "mercury", "venus", "mars", "jupiter", "saturn", "neptune", "uranus", "pluto") 
+  const queryText1 = `INSERT INTO "user" ("username", "password", "sun_id", "moon_id", "ascendent_id", "mercury_id", "venus_id", "mars_id", "jupiter_id", "saturn_id", "neptune_id", "uranus_id", "pluto_id") 
   VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) 
   RETURNING id`
 
- const queryText2 = `INSERT INTO "profile" ("sun_id", "moon_id", "ascendent_id", "mercury_id", "venus_id", "mars_id", "jupiter_id", "saturn_id", "neptune_id", "uranus_id", "pluto_id")
- VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11);`
+ //const queryText2 = `INSERT INTO "profile" ("sun_id", "moon_id", "ascendent_id", "mercury_id", "venus_id", "mars_id", "jupiter_id", "saturn_id", "neptune_id", "uranus_id", "pluto_id")
+ //VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11);`
 pool.query(queryText1, [username, password, sun, moon, ascendent, mercury, venus, mars, jupiter, saturn, neptune, uranus, pluto])
-pool.query(queryText2, [sun, moon, ascendent, mercury, venus, mars, jupiter, saturn, neptune, uranus, pluto])
+//pool.query(queryText2, [sun, moon, ascendent, mercury, venus, mars, jupiter, saturn, neptune, uranus, pluto])
   .then(() => res.sendStatus(201))
     .catch(() => res.sendStatus(500));
 });
@@ -115,7 +115,7 @@ router.put('/posts/:id', rejectUnauthenticated, (req, res) =>{
     res.sendStatus(500);
   });
 })
-//--------PROFILE ROUTES---------//
+//--------PROFILE ROUTES---------//stop here
 
 router.get('/natalchart/', rejectUnauthenticated, (req, res) => {
   const poolQuery = `SELECT "sun"."description_sun", 
@@ -128,19 +128,18 @@ router.get('/natalchart/', rejectUnauthenticated, (req, res) => {
   "saturn"."description_saturn", 
   "neptune"."description_neptune", 
   "uranus"."description_uranus", 
-  "pluto"."description_pluto" FROM "profile"
-  JOIN "user" ON "user"."id"="profile"."id"
-  JOIN "sun" ON "sun"."id"="profile"."sun_id"
-  JOIN "moon" ON "moon"."id"="profile"."moon_id"
-  JOIN "ascendent" ON "ascendent"."id"="profile"."ascendent_id"
-  JOIN "mercury" ON "mercury"."id"="profile"."mercury_id"
-  JOIN "venus" ON "venus"."id"="profile"."venus_id"
-  JOIN "mars" ON "mars"."id"="profile"."mars_id"
-  JOIN "jupiter" ON "jupiter"."id"="profile"."jupiter_id"
-  JOIN "saturn" ON "saturn"."id"="profile"."saturn_id"
-  JOIN "neptune" ON "neptune"."id"="profile"."neptune_id"
-  JOIN "uranus" ON "uranus"."id"="profile"."uranus_id"
-  JOIN "pluto" ON "pluto"."id"="profile"."pluto_id"
+  "pluto"."description_pluto" FROM "user"
+  JOIN "sun" ON "sun"."id"="user"."sun_id"
+  JOIN "moon" ON "moon"."id"="user"."moon_id"
+  JOIN "ascendent" ON "ascendent"."id"="user"."ascendent_id"
+  JOIN "mercury" ON "mercury"."id"="user"."mercury_id"
+  JOIN "venus" ON "venus"."id"="user"."venus_id"
+  JOIN "mars" ON "mars"."id"="user"."mars_id"
+  JOIN "jupiter" ON "jupiter"."id"="user"."jupiter_id"
+  JOIN "saturn" ON "saturn"."id"="user"."saturn_id"
+  JOIN "neptune" ON "neptune"."id"="user"."neptune_id"
+  JOIN "uranus" ON "uranus"."id"="user"."uranus_id"
+  JOIN "pluto" ON "pluto"."id"="user"."pluto_id"
   WHERE "user"."id" = $1`;
 
   pool.query(poolQuery, [req.user.id])

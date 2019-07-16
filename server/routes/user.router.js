@@ -91,7 +91,6 @@ router.delete('/posts/:id', rejectUnauthenticated, (req, res) => {
     });
 });
 router.get('/singlepost/:id', rejectUnauthenticated, (req, res) => {
-  console.log('router is hit', req.params.id, req.user.id)
   const queryText = `SELECT "posts"."id", "posts"."entry" FROM "posts"
   JOIN "user" ON "user"."id"="posts"."user_id"
   WHERE "posts"."id" = $1 AND "posts"."user_id" = $2;`

@@ -12,7 +12,6 @@ class EditPage extends Component {
                 id: this.props.singlePostReducer[0].id, 
                 }
         });
-        console.log(this.props.singlePostReducer.id)
         this.props.history.push('/posts');
     }
 
@@ -20,7 +19,6 @@ class EditPage extends Component {
         this.setState({
             entry: event.target.value
         })
-        console.log(event.target.value)
     }
     render() {
         return (

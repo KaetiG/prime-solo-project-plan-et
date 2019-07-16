@@ -10,9 +10,9 @@ state = {
 
 }
 
-    componentDidMount(){
-    console.log(this.state.isNatalActive)
-}
+//     componentDidMount(){
+//     console.log(this.state.isNatalActive)
+// }
     render() {
         return (
             <>
@@ -38,7 +38,6 @@ state = {
                     width={100}
                     onChange={(checked: boolean) => {
                         this.setState({ isNatalActive: checked })
-                        console.log(this.state)
                     }}
                 />
             </div>

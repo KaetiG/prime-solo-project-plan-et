@@ -13,9 +13,9 @@ class MarsPage extends Component {
 
     }
 
-    componentDidMount() {
-        console.log(this.state.isNatalActive)
-    }
+    // componentDidMount() {
+    //     console.log(this.state.isNatalActive)
+    // }
     render() {
         return (
             <>
@@ -29,7 +29,7 @@ class MarsPage extends Component {
                         Mars rules over Aries and the First House.
                     </p>
                     <br />
-                    <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+                    <DropdownButton id="dropdown-basic-button" title="Choose Planet">
                         <Dropdown.Item href="#/planets/sun">Sun</Dropdown.Item>
                         <Dropdown.Item href="#/planets/mercury">Mercury</Dropdown.Item>
                         <Dropdown.Item href="#/planets/venus">Venus</Dropdown.Item>
@@ -51,7 +51,6 @@ class MarsPage extends Component {
                         width={100}
                         onChange={(checked: boolean) => {
                             this.setState({ isNatalActive: checked })
-                            console.log(this.state)
                         }}
 
                     />

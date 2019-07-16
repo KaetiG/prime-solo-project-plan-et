@@ -13,9 +13,9 @@ class SaturnPage extends Component {
 
     }
 
-    componentDidMount() {
-        console.log(this.state.isNatalActive)
-    }
+    // componentDidMount() {
+    //     console.log(this.state.isNatalActive)
+    // }
     render() {
         return (
             <>
@@ -28,7 +28,7 @@ class SaturnPage extends Component {
                         Saturn rules over Capricorn and the Tenth House.
                     </p>
                     <br />
-                    <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+                    <DropdownButton id="dropdown-basic-button" title="Choose Planet">
                         <Dropdown.Item href="#/planets/sun">Sun</Dropdown.Item>
                         <Dropdown.Item href="#/planets/mercury">Mercury</Dropdown.Item>
                         <Dropdown.Item href="#/planets/venus">Venus</Dropdown.Item>
@@ -50,7 +50,6 @@ class SaturnPage extends Component {
                         width={100}
                         onChange={(checked: boolean) => {
                             this.setState({ isNatalActive: checked })
-                            console.log(this.state)
                         }}
 
                     />

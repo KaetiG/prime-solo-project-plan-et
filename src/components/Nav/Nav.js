@@ -7,6 +7,7 @@ import { ReactComponent as PostIcon } from '../icons/post.svg';
 import { ReactComponent as UserIcon } from '../icons/user.svg';
 import { ReactComponent as PlanetsIcon } from '../icons/solar-system.svg';
 import { ReactComponent as MoonIcon } from '../icons/moon.svg';
+import { ReactComponent as HomeIcon } from '../icons/home.svg';
 import LogOutButton from '../LogOutButton/LogOutButton';
 
 
@@ -19,7 +20,7 @@ const Nav = (props) => (
         <>
         <Menu>
         <a className="menu-item" href="#/home">
-          Home
+        <HomeIcon width="25px" height="25px" className="iconFill" />  Home
         </a>
         <br />
         <a className="menu-item" href="#/profile">
@@ -37,6 +38,8 @@ const Nav = (props) => (
         <a className="menu-item" href="#/posts">
         <PostIcon width="25px" height="25px" className="iconFill" />  Posts
         </a>
+       <br />
+       <br />
        <br />
        <br />
        <br />

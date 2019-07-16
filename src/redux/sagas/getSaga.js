@@ -13,7 +13,6 @@ function* getNatal(action) {
 function* getOnePost(action) {
   try {
   const getResponse = yield axios.get('/api/user/singlepost/' + action.payload.id);
-  console.log('get one post saga', getResponse.data);
       yield put({ type: 'SET_ONE_POST', payload: getResponse.data })
     } catch(error) {
       console.log('error posting entry', error);

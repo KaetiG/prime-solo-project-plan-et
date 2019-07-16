@@ -61,7 +61,6 @@ class RegisterPage extends Component {
   } // end registerUser
 
   handleInputChangeFor = propertyName => (event) => {
-    console.log(event.target.value)
     this.setState({
       [propertyName]: event.target.value,
     });
@@ -73,12 +72,8 @@ class RegisterPage extends Component {
         <br/>
         <br/>
         {this.props.errors.registrationMessage && (
-          <h2
-            className="alert"
-            role="alert"
-          >
-            {this.props.errors.registrationMessage}
-          </h2>
+          alert(this.props.errors.registrationMessage)
+          
         )}
         <form className="registerForm" onSubmit={this.registerUser}>
           <h1>Register</h1>

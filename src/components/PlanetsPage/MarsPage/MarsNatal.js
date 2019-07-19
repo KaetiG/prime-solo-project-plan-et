@@ -69,7 +69,7 @@ class MarsNatal extends Component {
                     <p>Mars in Sagittarius people are generally active.
                         They will use physical activity to get their emotions out.
                         They will likely try to avoid and ignore issues at hand. This placement may also start many projects but seldom finish them.
-                        They like friendly debates, but the can get out of hand sometimes.</p>
+                        They like friendly debates, but they can get out of hand sometimes.</p>
                     <Capricorn height='80px' />
                     <h4>Capricorn</h4>
                     <p>Mars Capricorns are driven by success.

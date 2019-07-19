@@ -10,7 +10,7 @@ const LogOutButton = props => (
     className={props.className}
     onClick={() => props.dispatch({ type: 'LOGOUT' })}
   >
-    <Link className="logoutButton" to="/home">
+    <Link className="logoutButton" to="/home" onClick={() => props.dispatch({ type: 'LOGOUT' })}>
       Log Out
       </Link>
   </button>

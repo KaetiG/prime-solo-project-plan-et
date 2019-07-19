@@ -2,13 +2,14 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './Nav.css';
 import { stack as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 
 import { ReactComponent as PostIcon } from '../icons/post.svg';
 import { ReactComponent as UserIcon } from '../icons/user.svg';
 import { ReactComponent as PlanetsIcon } from '../icons/solar-system.svg';
 import { ReactComponent as MoonIcon } from '../icons/moon.svg';
 import { ReactComponent as HomeIcon } from '../icons/home.svg';
-import LogOutButton from '../LogOutButton/LogOutButton';
+//import LogOutButton from '../LogOutButton/LogOutButton';
 
 
 
@@ -43,7 +44,9 @@ const Nav = (props) => (
        <br />
        <br />
        <br />
-       <a href=""><LogOutButton className="menu-item" /></a>
+       <a href="/" className="menu-item"><Link className="menu-item" to="/home" onClick={() => props.dispatch({ type: 'LOGOUT' })}>
+      Log Out
+      </Link></a>
         </Menu>
         </>
       )}

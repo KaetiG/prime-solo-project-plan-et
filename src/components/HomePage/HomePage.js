@@ -18,6 +18,7 @@ import { ReactComponent as Cancer } from '../icons/cancer.svg';
 import { ReactComponent as Leo } from '../icons/leo.svg';
 import { ReactComponent as Sagittarius } from '../icons/sagittarius.svg';
 import { ReactComponent as Capricorn } from '../icons/capricorn.svg';
+import { ReactComponent as Aquarius } from '../icons/aquarius.svg';
 import { ReactComponent as Pisces } from '../icons/pisces.svg';
 
 // this could also be written with destructuring parameters as:
@@ -55,16 +56,16 @@ const HomePage = (props) => (
                 <Moon height="30px" width="30px" />
               </td>
               <td>
-                Moon (Full)
+                Moon
               </td>
               <td>
                 in
                 </td>
               <td>
-                Capricorn
+                Aquarius
               </td>
               <td>
-                <Capricorn height="30px" width="30px" />
+                <Aquarius height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -78,10 +79,10 @@ const HomePage = (props) => (
                 in
               </td>
               <td>
-                Leo
+                Cancer
               </td>
               <td>
-                <Leo height="30px" width="30px" />
+                <Cancer height="30px" width="30px" />
               </td>
             </tr>
             <tr>

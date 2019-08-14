@@ -45,10 +45,10 @@ const HomePage = (props) => (
                 in
               </td>
               <td>
-                Cancer
+                Leo
               </td>
               <td>
-                <Cancer height="30px" width="30px" />
+                <Leo height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -73,16 +73,16 @@ const HomePage = (props) => (
                 <Mercury height="30px" width="30px" />
               </td>
               <td>
-                Mercury(R)
+                Mercury
               </td>
               <td>
                 in
               </td>
               <td>
-                Cancer
+                Leo
               </td>
               <td>
-                <Cancer height="30px" width="30px" />
+                <Leo height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -96,10 +96,10 @@ const HomePage = (props) => (
                 in
               </td>
               <td>
-                Cancer
+                Leo
               </td>
               <td>
-                <Cancer height="30px" width="30px" />
+                <Leo height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -124,7 +124,7 @@ const HomePage = (props) => (
                 <Jupiter height="30px" width="30px" />
               </td>
               <td>
-                Jupiter(R)
+                Jupiter
               </td>
               <td>
                 in
@@ -158,7 +158,7 @@ const HomePage = (props) => (
                 <Uranus height="30px" width="30px" />
               </td>
               <td>
-                Uranus
+                Uranus(R)
               </td>
               <td>
                 in

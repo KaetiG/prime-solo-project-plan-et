@@ -71,19 +71,18 @@ class Calendar extends Component {
                         </div> */}
 
                         <div className="calKey">
-                            <p style={{ color: '#00D0F1' }}>Mercury Retrograde enters Cancer July 19</p>
-                            <p style={{ color: '#EABC39' }}>Sun enters Leo July 22</p>
-                            <p style={{ color: '#FF77DA' }}>Venus enters Leo July 27</p>
-                            <p style={{ color: '#0A308F' }}>Mercury Retrograde ends July 31</p>
-                            <p style={{ color: '#C3C3C3' }}>New Moon July 31 in Leo</p>
-                            <p style={{ color: '#00D0F1' }}>Mercury enters Leo August 11</p>
-                            <p style={{ color: '#A7841F' }}>Uranus Retrograde begins August 11</p>
                             <p style={{ color: '#757575' }}>Full Moon August 15 in Aquarius</p>
                             <p style={{ color: '#FF3333' }}>Mars enters Virgo August 18</p>
                             <p style={{ color: '#FF77DA' }}>Venus enters Virgo August 21</p>
                             <p style={{ color: '#EABC39' }}>Sun enters Virgo August 23</p>
                             <p style={{ color: '#00D0F1' }}>Mercury enters Virgo August 29</p>
-                            <p style={{ color: '#C3C3C3' }}>New Moon August 29 in Virgo </p>
+                            <p style={{ color: '#C3C3C3' }}>New Moon August 30 in Virgo </p>
+                            <p style={{ color: '#757575' }}>Full Moon September 14 in Pisces</p>
+                            <p style={{ color: '#00D0F1' }}>Mercury enters Libra September 14</p>
+                            <p style={{ color: '#FF77DA' }}>Venus enters Libra September 14</p>
+                            <p style={{ color: '#4C0090' }}>Saturn goes Direct September 18</p>
+                            <p style={{ color: '#EABC39' }}>Sun enters Libra September 23</p>
+                            <p style={{ color: '#C3C3C3' }}>New Moon September 28 in Libra</p>
 
                         </div>
                     

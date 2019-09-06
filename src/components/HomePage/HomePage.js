@@ -15,7 +15,7 @@ import  { ReactComponent as Pluto } from '../icons/pluto.svg';
 
 import { ReactComponent as Taurus } from '../icons/taurus.svg';
 import { ReactComponent as Cancer } from '../icons/cancer.svg';
-import { ReactComponent as Leo } from '../icons/leo.svg';
+import { ReactComponent as Virgo } from '../icons/virgo.svg';
 import { ReactComponent as Sagittarius } from '../icons/sagittarius.svg';
 import { ReactComponent as Capricorn } from '../icons/capricorn.svg';
 import { ReactComponent as Aquarius } from '../icons/aquarius.svg';
@@ -45,10 +45,10 @@ const HomePage = (props) => (
                 in
               </td>
               <td>
-                Leo
+                Virgo
               </td>
               <td>
-                <Leo height="30px" width="30px" />
+                <Virgo height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -62,10 +62,10 @@ const HomePage = (props) => (
                 in
                 </td>
               <td>
-                Aquarius
+                Sagittarius
               </td>
               <td>
-                <Aquarius height="30px" width="30px" />
+                <Sagittarius height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -79,10 +79,10 @@ const HomePage = (props) => (
                 in
               </td>
               <td>
-                Leo
+                Virgo
               </td>
               <td>
-                <Leo height="30px" width="30px" />
+                <Virgo height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -96,10 +96,10 @@ const HomePage = (props) => (
                 in
               </td>
               <td>
-                Leo
+                Virgo
               </td>
               <td>
-                <Leo height="30px" width="30px" />
+                <Virgo height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -113,10 +113,10 @@ const HomePage = (props) => (
                 in
               </td>
               <td>
-                Leo
+                Virgo
               </td>
               <td>
-                <Leo height="30px" width="30px" />
+                <Virgo height="30px" width="30px" />
               </td>
             </tr>
             <tr>

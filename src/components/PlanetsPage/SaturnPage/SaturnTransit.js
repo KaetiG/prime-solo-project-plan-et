@@ -10,7 +10,7 @@ class SaturnTransit extends Component {
                 <div className="natalTransitDiv">
                     <Capricorn height='80px' />
                     <h4>Capricorn</h4>
-                    <p>Saturn is in its home sign of Capricorn until March 2019.</p>
+                    <p>Saturn is in its home sign of Capricorn until March 2020.</p>
                     <br />
                     <blockquote class="blockquote" className="transitBlockQuote">The global patriarchy could meet its limits—or press for a takeover. 
                         Both Saturn and Capricorn rule men, fathers, authority, banks, the economy, government, corporations and big industry. 

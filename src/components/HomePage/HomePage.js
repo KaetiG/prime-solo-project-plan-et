@@ -20,6 +20,8 @@ import { ReactComponent as Sagittarius } from '../icons/sagittarius.svg';
 import { ReactComponent as Capricorn } from '../icons/capricorn.svg';
 import { ReactComponent as Aquarius } from '../icons/aquarius.svg';
 import { ReactComponent as Pisces } from '../icons/pisces.svg';
+import { ReactComponent as Scorpio } from '../icons/scorpio.svg';
+import { ReactComponent as Libra } from '../icons/libra.svg';
 
 // this could also be written with destructuring parameters as:
 // const UserPage = ({ user }) => (
@@ -45,10 +47,10 @@ const HomePage = (props) => (
                 in
               </td>
               <td>
-                Virgo
+                Scorpio
               </td>
               <td>
-                <Virgo height="30px" width="30px" />
+                <Scorpio height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -62,10 +64,10 @@ const HomePage = (props) => (
                 in
                 </td>
               <td>
-                Sagittarius
+                Virgo
               </td>
               <td>
-                <Sagittarius height="30px" width="30px" />
+                <Virgo height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -79,10 +81,10 @@ const HomePage = (props) => (
                 in
               </td>
               <td>
-                Virgo
+                Scorpio
               </td>
               <td>
-                <Virgo height="30px" width="30px" />
+                <Scorpio height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -96,10 +98,10 @@ const HomePage = (props) => (
                 in
               </td>
               <td>
-                Virgo
+                Scorpio
               </td>
               <td>
-                <Virgo height="30px" width="30px" />
+                <Scorpio height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -113,10 +115,10 @@ const HomePage = (props) => (
                 in
               </td>
               <td>
-                Virgo
+                Libra
               </td>
               <td>
-                <Virgo height="30px" width="30px" />
+                <Libra height="30px" width="30px" />
               </td>
             </tr>
             <tr>
@@ -141,7 +143,7 @@ const HomePage = (props) => (
                 <Saturn height="30px" width="30px" />
               </td>
               <td>
-                Saturn(R)
+                Saturn
               </td>
               <td>
                 in
@@ -192,7 +194,7 @@ const HomePage = (props) => (
                 <Pluto height="30px" width="30px" />
               </td>
               <td>
-                Pluto(R)
+                Pluto
               </td>
               <td>
                 in

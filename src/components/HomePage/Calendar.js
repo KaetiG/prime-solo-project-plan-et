@@ -71,18 +71,23 @@ class Calendar extends Component {
                         </div> */}
 
                         <div className="calKey">
-                            <p style={{ color: '#757575' }}>Full Moon August 15 in Aquarius</p>
-                            <p style={{ color: '#FF3333' }}>Mars enters Virgo August 18</p>
-                            <p style={{ color: '#FF77DA' }}>Venus enters Virgo August 21</p>
-                            <p style={{ color: '#EABC39' }}>Sun enters Virgo August 23</p>
-                            <p style={{ color: '#00D0F1' }}>Mercury enters Virgo August 29</p>
-                            <p style={{ color: '#C3C3C3' }}>New Moon August 30 in Virgo </p>
-                            <p style={{ color: '#757575' }}>Full Moon September 14 in Pisces</p>
-                            <p style={{ color: '#00D0F1' }}>Mercury enters Libra September 14</p>
-                            <p style={{ color: '#FF77DA' }}>Venus enters Libra September 14</p>
-                            <p style={{ color: '#4C0090' }}>Saturn goes Direct September 18</p>
-                            <p style={{ color: '#EABC39' }}>Sun enters Libra September 23</p>
-                            <p style={{ color: '#C3C3C3' }}>New Moon September 28 in Libra</p>
+                            <p style={{ color: '#C3C3C3' }}>New Moon October 27 in Scorpio</p>
+                            <p style={{ color: '#00D0F1' }}>Mercury Retrograde begins October 31</p>
+                            <p style={{ color: '#FF77DA' }}>Venus enters Sagittarius November 1</p>
+                            <p style={{ color: '#757575' }}>Full Moon November 12 in Taurus</p>
+                            <p style={{ color: '#FF3333' }}>Mars enters Scorpio November 19</p>
+                            <p style={{ color: '#00D0F1' }}>Mercury Direct begins November 20</p>
+                            <p style={{ color: '#EABC39' }}>Sun enters Sagittarius November 22</p>
+                            <p style={{ color: '#FF77DA' }}>Venus enters Capricorn November 25</p>
+                            <p style={{ color: '#C3C3C3' }}>New Moon November 26 in Sagittarius</p>
+                            <p style={{ color: '#026E6B' }}>Neptune Direct begins November 27</p>
+                            <p style={{ color: '#00933A' }}>Jupiter enters Capricorn December 2</p>
+                            <p style={{ color: '#00D0F1' }}>Mercury enters Sagittarius December 9</p>
+                            <p style={{ color: '#757575' }}>Full Moon December 12 in Gemini</p>
+                            <p style={{ color: '#FF77DA' }}>Venus enters Aquarius December 20</p>
+                            <p style={{ color: '#EABC39' }}>Sun enters Capricorn December 21</p>
+                            <p style={{ color: '#C3C3C3' }}>New Moon December 26 in Capricorn (Annular SOLAR Eclipse)</p>
+                            <p style={{ color: '#00D0F1' }}>Mercury enters Capricorn December 28</p>
 
                         </div>
                     
